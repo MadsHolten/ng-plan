@@ -9,7 +9,7 @@ The implementation I personally use is the following:
 3) Merge WKT polygons and relevant information to geoJSON using the [wellknown](https://www.npmjs.com/package/wellknown) library
 4) Send resulting geoJSON object to Ng-Plan for visualization
 
-![alt text](./assets/screenshot.png "Plan example")
+![alt text](https://github.com/MadsHolten/ng-plan/raw/master/src/assets/screenshot.PNG "Plan example")
 
 #### Install to Angular project
 Install package

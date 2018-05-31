@@ -21,4 +21,8 @@ export class AppComponent implements OnInit {
     })
   }
 
+  log(ev){
+    console.log(ev)
+  }
+
 }

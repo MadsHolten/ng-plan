@@ -34,7 +34,7 @@
     <g *ngFor="let room of rooms"
         [attr.transform]="transform"
         [id]="room.uri"
-        (click)="addNodeMode ? addNode($event, room) : selectRoom(room)"
+        (click)="selectRoom($event, room)"
         [attr.fill]="room.color ? room.color : '#eee'"
         class="room">
 

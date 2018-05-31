@@ -43,8 +43,7 @@ The Ng-plan toolbar uses material icons, so the following must be added to index
 | Input | toolbar               | Display toolbar? Defaults to false            |          |
 | Input | centroids             | Display centroids? Defaults to false          |          |
 | Input | colors                | Array of key/val with {uri: "", color: ""}. Colors will also be read from the geoJSON color property. Defaults to #eee.    |          |
-| Output| clickedRoom           | Fired on room click. Returns the URI of the clicked room||
-| Output| clickedRoomCoordinate | Fired on ctrl+click on room. Returns the URI of the clicked room and the absolute coordinates based on the original geoJSON. |          |
+| Output| clickedRoom           | Fired on room click. Returns the URI of the clicked room and the absolute coordinates based on the original geoJSON.||
 
 #### Functionality
 - Zoom in/out using scroll wheel

@@ -2,8 +2,6 @@ import { Component, Input, Output, EventEmitter, AfterViewInit, OnChanges, Simpl
 import { MatIconRegistry } from "@angular/material/icon";
 import { DomSanitizer } from "@angular/platform-browser";
 
-import * as geojsonExtent_ from 'geojson-extent';
-const geojsonExtent = geojsonExtent_;
 import * as d3 from 'd3-decompose';  // takes SVG or CSS3 transform strings and converts them into usable values
 import * as d3p from 'd3-polygon';   // Operations on polygons
 
@@ -20,7 +18,6 @@ export interface Room {
 export class PlanComponent implements AfterViewInit {
 
     @Output() clickedRoom = new EventEmitter();             // Clicked room
-    @Output() clickedRoomCoordinate = new EventEmitter();   // Clicked room coordinate
 
     @Input() private data;                //geoJSON
     @Input() private colors;              //color schema
@@ -46,6 +43,7 @@ export class PlanComponent implements AfterViewInit {
     private movedX: number = 0; // store move state
     private movedY: number = 0; // store move state
     public scaled: number = 1 // store scale state
+    public boundingBox;         // Stores boundingBox as [xMin, yMin, xMax, yMax]
 
     // modes
     public panMode: boolean = false;
@@ -82,22 +80,6 @@ export class PlanComponent implements AfterViewInit {
       );
     }
 
-    addNode(ev, room){
-
-        var scale = this.scaled;
-        var offsetX = this.baseOffsetX+this.movedX;
-        var offsetY = this.baseOffsetY+this.movedY;
-        var screenX = ev.offsetX;
-        var screenY = ev.offsetX;
-
-        var x = (screenX-offsetX)/scale;
-        var y = (screenY-offsetY)/scale;
-        var coordinates = [x,-y];
-
-        // Emit event
-        this.clickedRoomCoordinate.emit({uri:room.uri, coordinates: coordinates});
-    }
-
     defineColors(){
         this.rooms.map(x => {
             var match = this.colors.filter(y => y.uri == x.uri);
@@ -118,6 +100,12 @@ export class PlanComponent implements AfterViewInit {
     }
 
     extractRooms(){
+        // For bounding box [xMin, yMin, xMax, yMax]
+        var xMin;
+        var yMin;
+        var xMax;
+        var yMax;
+
         this.rooms = this.data.features.map(room => {
             var polygons = [];
             var roomPath = '';
@@ -138,6 +126,13 @@ export class PlanComponent implements AfterViewInit {
                         path+= (index == 0) ? `M${x},${y} ` : `L${x},${y} `;
 
                         coordinate[1] = y; // Update polygon with new y
+
+                        // Get bounding box
+                        if(!xMin || x < xMin) xMin = x;
+                        if(!xMax || x > xMax) xMax = x;
+                        if(!yMin || y < yMin) yMin = y;
+                        if(!yMax || y > yMax) yMax = y;
+
                         return coordinate;
                     })
                     points = points.trim();    // remove last space
@@ -157,16 +152,17 @@ export class PlanComponent implements AfterViewInit {
             var uri = room.properties.uri;
             var color = room.properties.color;
             var description = room.properties.description ? room.properties.description : '';
+            
+            // Store bounding box
+            this.boundingBox = [xMin, yMin, xMax, yMax];
 
             return {name: name, uri: uri, description: description, color: color, polygons: polygons, path:roomPath, centroid: centroid}
         });
     }
 
-    getScaleOffset() {
-        // Get bounding box [xMin, yMin, xMax, yMax]
-        var bb = geojsonExtent(this.data);
-    
+    getScaleOffset() {   
         // Calculate data size
+        var bb = this.boundingBox;
         var dataWidth = bb[2]-bb[0];
         var dataHeight = bb[3]-bb[1];
 
@@ -262,9 +258,22 @@ export class PlanComponent implements AfterViewInit {
         // this.transform = this.transform.replace(oldScale,scale);
     }
 
-    selectRoom(ev){
-        this.clickedRoom.emit(ev);
-        this.selectedRoom = ev;
+    selectRoom(ev, room){
+        this.selectedRoom = room;
+
+        // Get coordinates
+        var scale = this.scaled;
+        var offsetX = this.baseOffsetX+this.movedX;
+        var offsetY = this.baseOffsetY+this.movedY;
+        var screenX = ev.offsetX;
+        var screenY = ev.offsetX;
+
+        var x = (screenX-offsetX)/scale;
+        var y = (screenY-offsetY)/scale;
+        var coordinates = [x,-y];
+
+        // Emit event
+        this.clickedRoom.emit({uri: room.uri, coordinates: coordinates});
     }
 
     onCanvasClick(ev){

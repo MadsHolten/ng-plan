@@ -15,15 +15,13 @@
     "@angular/cdk": "^6.2.0",
     "@angular/animations": "^6.0.3",
     "d3-decompose": "^1.0.2",
-    "d3-polygon": "^1.0.3",
-    "geojson-extent": "^0.3.2"
+    "d3-polygon": "^1.0.3"
   },
   "dependencies": {
-    "@angular/material": "^6.2.0",
-    "@angular/cdk": "^6.2.0",
     "@angular/animations": "^6.0.3",
+    "@angular/cdk": "^6.2.0",
+    "@angular/material": "^6.2.0",
     "d3-decompose": "^1.0.2",
-    "d3-polygon": "^1.0.3",
-    "geojson-extent": "^0.3.2"
+    "d3-polygon": "^1.0.3"
   }
 }

@@ -6,7 +6,6 @@
     "entryFile": "src/public_api.ts"
   },
   "whitelistedNonPeerDependencies": [
-    "geojson-extent",
     "d3-decompose",
     "d3-polygon",
     "@angular/animations",

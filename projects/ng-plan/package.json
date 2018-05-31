@@ -1,0 +1,28 @@
+{
+  "name": "ng-plan",
+  "license": "GPL-2.0+",
+  "author": {
+    "name": "Mads Holten Rasmussen",
+    "email": "mads.h.rasmussen@gmail.com",
+    "url": "http://www.dtu.dk/english/service/phonebook/person?id=42843&cpid=202565&tab=2&qt=dtupublicationquery"
+  },
+  "version": "0.0.3",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/material": "^6.2.0",
+    "@angular/cdk": "^6.2.0",
+    "@angular/animations": "^6.0.3",
+    "d3-decompose": "^1.0.2",
+    "d3-polygon": "^1.0.3",
+    "geojson-extent": "^0.3.2"
+  },
+  "dependencies": {
+    "@angular/material": "^6.2.0",
+    "@angular/cdk": "^6.2.0",
+    "@angular/animations": "^6.0.3",
+    "d3-decompose": "^1.0.2",
+    "d3-polygon": "^1.0.3",
+    "geojson-extent": "^0.3.2"
+  }
+}

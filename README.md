@@ -1,27 +1,62 @@
-# NgPlanLib
+### Ng-Plan
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+This module will draw a 2D plan drawing from a geoJSON object. It was built to visualize 2D space boundaries from the Building Information Modeling (BIM) authring tool, Revit. It is quite generic, but does have some features that are mainly related to the work done by the W3C Linked Building Data ([LBD](https://www.w3.org/community/lbd/)) Community Group.
 
-## Development server
+The implementation I personally use is the following:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1) Export [BOT](w3id.org/bot) triples from Revit using [Revit-bot-exporter](https://github.com/MadsHolten/revit-bot-exporter)
+2) Export 2D space boundaries to WKT polygons using Dynamo script
+3) Merge WKT polygons and relevant information to geoJSON using the [wellknown](https://www.npmjs.com/package/wellknown) library
+4) Send resulting geoJSON object to Ng-Plan for visualization
 
-## Code scaffolding
+![alt text](./assets/screenshot.png "Plan example")
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Install to Angular project
+Install package
+`npm i ng-plan --save`
 
-## Build
+Add to app.module.ts
+```
+import { PlanModule } from 'ng-plan';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+@NgModule({
+  imports: [
+    ...,
+    PlanModule
+  ]
+})
+```
 
-## Running unit tests
+Now Ng-plan can be used anywhere using the <ng-plan> tag.
+```
+<ng-plan [data]="data">
+</ng-plan>
+```
+where *data* is the geoJSON data.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The Ng-plan toolbar uses material icons, so the following must be added to index.html for the toolbar to display correctly:
+`<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">`
 
-## Running end-to-end tests
+| Type  | Attribute             | Description                                   | Required |
+| ----- | --------------------- | --------------------------------------------- | :------: |
+| Input | data                  | geoJSON object                                | x        |
+| Input | toolbar               | Display toolbar? Defaults to false            |          |
+| Input | centroids             | Display centroids? Defaults to false          |          |
+| Input | colors                | Array of key/val with {uri: "", color: ""}. Colors will also be read from the geoJSON color property. Defaults to #eee.    |          |
+| Output| clickedRoom           | Fired on room click. Returns the URI of the clicked room||
+| Output| clickedRoomCoordinate | Fired on ctrl+click on room. Returns the URI of the clicked room and the absolute coordinates based on the original geoJSON. |          |
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Functionality
+- Zoom in/out using scroll wheel
+- Button for zoom extents
+- Displays property "name" as label
+- Displays property "description" as sub-label
+- Appends color based on "color" property
+- Highlights room on click - highlight off when clicking canvas
+- Ctrl+click to get click coordinate (absolute from input geoJSON) and the URI of the room
 
-## Further help
+#### Issues / changes
+- Custom icon for zoom extents not working
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Future
+- Add support for lines + click lines

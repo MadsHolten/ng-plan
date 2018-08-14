@@ -44,15 +44,22 @@ The Ng-plan toolbar uses material icons, so the following must be added to index
 | Input | centroids             | Display centroids? Defaults to false          |          |
 | Input | colors                | Array of key/val with {uri: "", color: ""}. Colors will also be read from the geoJSON color property. Defaults to #eee.    |          |
 | Output| clickedRoom           | Fired on room click. Returns the URI of the clicked room and the absolute coordinates based on the original geoJSON.||
+| Output| clickedCanvas         | Fired on canvas click. Use to clear selection or whatever. ||
+
+*Styling*
+| Attribute        | Description                                                                    | Default |
+| defaultColor     | What fill color should be used for rooms where no color is explicitly defined? | #f2flec |
+| selectedColor    | What fill color should be used for selected rooms?                             | #ebefe4 |
 
 #### Functionality
 - Zoom in/out using scroll wheel
+- Zoom in/out using up/down
 - Button for zoom extents
 - Displays property "name" as label
 - Displays property "description" as sub-label
 - Appends color based on "color" property
-- Highlights room on click - highlight off when clicking canvas
-- Ctrl+click to get click coordinate (absolute from input geoJSON) and the URI of the room
+- Event for clicking either canvas or room
+- Retrieve coordinates when clicking room
 
 #### Issues / changes
 - Custom icon for zoom extents not working

@@ -18,14 +18,19 @@ export interface Room {
 export class PlanComponent implements AfterViewInit {
 
     @Output() clickedRoom = new EventEmitter();             // Clicked room
+    @Output() clickedCanvas = new EventEmitter();
 
-    @Input() private data;                //geoJSON
-    @Input() private colors;              //color schema
-    @Input() public centroids: boolean;   //color schema
-    @Input() public toolbar: boolean;     //toolbar visible?
+    @Input() private data;                       //geoJSON
+    @Input() private colors;                     //color schema
+    @Input() public centroids: boolean;          //color schema
+    @Input() public toolbar: boolean;            //toolbar visible?
+    @Input() private selected: string[];         //Spaces to be highlighted
+
+    // Styles
+    @Input() public selectedColor: string = '#ebefe4';
+    @Input() public defaultColor: string = '#f2flec';
+
     public rooms;
-
-    public selectedRoom;
 
     // Canvas
     private canvasWidth;
@@ -58,7 +63,7 @@ export class PlanComponent implements AfterViewInit {
 
     ngAfterViewInit(){
         this.getCanvasSize();
-        this.addSVGicons();
+        // this.addSVGicons();
     }
 
     ngOnChanges(changes: SimpleChanges) {
@@ -71,13 +76,28 @@ export class PlanComponent implements AfterViewInit {
         if (changes.colors && changes.colors.currentValue){
             this.defineColors();
         }
+        if (changes.selected){
+            this.updateSelection();
+        }
     }
 
-    addSVGicons(){
-      this.matIconRegistry.addSvgIcon(
-        "zoom_extents",
-        this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/zoom_extents.svg")
-      );
+    // addSVGicons(){
+    //   this.matIconRegistry.addSvgIcon(
+    //     "zoom_extents",
+    //     this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/zoom_extents.svg")
+    //   );
+    // }
+
+    updateSelection(){
+        if(!this.rooms) return;
+        this.rooms = this.rooms.map(x => {
+            if(this.selected.indexOf(x.uri) != -1){
+                x.selected = true;
+            }else{
+                x.selected = false;
+            }
+            return x;
+        })
     }
 
     defineColors(){
@@ -100,12 +120,14 @@ export class PlanComponent implements AfterViewInit {
     }
 
     extractRooms(){
+        if(!this.data.features) return this.rooms = null;
+
         // For bounding box [xMin, yMin, xMax, yMax]
         var xMin;
         var yMin;
         var xMax;
         var yMax;
-
+        
         this.rooms = this.data.features.map(room => {
             var polygons = [];
             var roomPath = '';
@@ -150,7 +172,7 @@ export class PlanComponent implements AfterViewInit {
             }
             var name = room.properties.name;
             var uri = room.properties.uri;
-            var color = room.properties.color;
+            var color = room.properties.color ? room.properties.color : this.defaultColor;
             var description = room.properties.description ? room.properties.description : '';
             
             // Store bounding box
@@ -259,8 +281,6 @@ export class PlanComponent implements AfterViewInit {
     }
 
     selectRoom(ev, room){
-        this.selectedRoom = room;
-
         // Get coordinates
         var scale = this.scaled;
         var offsetX = this.baseOffsetX+this.movedX;
@@ -278,7 +298,7 @@ export class PlanComponent implements AfterViewInit {
 
     onCanvasClick(ev){
         if(ev.target.id != 'canvas') return;
-        this.selectedRoom = null;
+        this.clickedCanvas.emit();
     }
 
 }

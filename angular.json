@@ -161,6 +161,86 @@
           }
         }
       }
+    },
+    "ng-mesh-viewer": {
+      "root": "projects/ng-mesh-viewer",
+      "sourceRoot": "projects/ng-mesh-viewer/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-mesh-viewer/tsconfig.lib.json",
+            "project": "projects/ng-mesh-viewer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng-mesh-viewer/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-mesh-viewer/src/test.ts",
+            "tsConfig": "projects/ng-mesh-viewer/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-mesh-viewer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-mesh-viewer/tsconfig.lib.json",
+              "projects/ng-mesh-viewer/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ng-mesh-viewer2": {
+      "root": "projects/ng-mesh-viewer2",
+      "sourceRoot": "projects/ng-mesh-viewer2/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-mesh-viewer2/tsconfig.lib.json",
+            "project": "projects/ng-mesh-viewer2/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng-mesh-viewer2/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-mesh-viewer2/src/test.ts",
+            "tsConfig": "projects/ng-mesh-viewer2/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-mesh-viewer2/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-mesh-viewer2/tsconfig.lib.json",
+              "projects/ng-mesh-viewer2/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-plan-lib"

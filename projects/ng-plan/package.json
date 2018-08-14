@@ -6,8 +6,13 @@
     "email": "mads.h.rasmussen@gmail.com",
     "url": "http://www.dtu.dk/english/service/phonebook/person?id=42843&cpid=202565&tab=2&qt=dtupublicationquery"
   },
-  "version": "0.0.3",
-  "homepage": "https://github.com/MadsHolten/ng-plan",
+  "collaborators": {    
+    "name": "Mads Holten Rasmussen",
+    "email": "mads.h.rasmussen@gmail.com",
+    "url": "http://www.dtu.dk/english/service/phonebook/person?id=42843&cpid=202565&tab=2&qt=dtupublicationquery"
+  },
+  "version": "0.0.12",
+  "repository": "https://github.com/MadsHolten/ng-plan",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0",

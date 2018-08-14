@@ -10,19 +10,42 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent implements OnInit {
 
   public data;
+  public selectedSpaces;
+  public buttons = ["ng-plan", "ng-mesh-viewer"];
+  public selectedButton = "ng-plan";
 
   constructor(
     private http: HttpClient
   ) { }
 
   ngOnInit(){
-    this.http.get('./assets/test-data.json').subscribe(res => {
-      this.data = res;
-    })
+    this.switchModule("ng-plan");
   }
 
-  log(ev){
-    console.log(ev)
+  switchModule(name){
+
+    this.selectedButton = name;
+
+    if(name == "ng-plan"){
+      this.http.get('./assets/test-plan.json').subscribe(res => {
+        this.data = res;
+      })
+    }
+
+    if(name == "ng-mesh-viewer"){
+      this.http.get('./assets/test-mesh.json').subscribe(res => {
+        this.data = res;
+      })
+    }
+
+  }
+
+  roomClick(ev){
+    this.selectedSpaces = [ev.uri];
+  }
+
+  canvasClick(){
+    this.selectedSpaces = [];
   }
 
 }

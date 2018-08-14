@@ -19,9 +19,6 @@
     opacity: 0.5;
     cursor: pointer;
 }
-.selected {
-    fill:red;
-}
 .selected-space{
     stroke-width: 2;
 }

@@ -1,1 +1,27 @@
-<ng-plan [data]="data" toolbar="true" (clickedRoom)="log($event)"></ng-plan>
+<div class="button-row">
+    <button 
+        *ngFor="let btn of buttons" 
+        mat-raised-button 
+        [disabled]="btn == selectedButton"
+        (click)="switchModule(btn)">
+        {{btn}}
+    </button>
+</div>
+
+<!-- ng-plan module -->
+<ng-plan
+    [hidden]="selectedButton != 'ng-plan'"
+    [data]="data"
+    toolbar="true"
+    (clickedRoom)="roomClick($event)"
+    (clickedCanvas)="canvasClick()"
+    [selected]="selectedSpaces">
+</ng-plan>
+
+<!-- ng-mesh-viewer module -->
+<ng-mesh-viewer
+    [hidden]="selectedButton != 'ng-mesh-viewer'"
+    [data]="data">
+</ng-mesh-viewer>
+
+<!-- <ng-mesh-viewer2 [hidden]="selectedButton != 'ng-mesh-viewer'"></ng-mesh-viewer2> -->

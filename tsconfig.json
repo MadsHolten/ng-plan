@@ -22,6 +22,18 @@
       ],
       "ng-plan/*": [
         "dist/ng-plan/*"
+      ],
+      "ng-mesh-viewer": [
+        "dist/ng-mesh-viewer"
+      ],
+      "ng-mesh-viewer/*": [
+        "dist/ng-mesh-viewer/*"
+      ],
+      "ng-mesh-viewer2": [
+        "dist/ng-mesh-viewer2"
+      ],
+      "ng-mesh-viewer2/*": [
+        "dist/ng-mesh-viewer2/*"
       ]
     }
   }

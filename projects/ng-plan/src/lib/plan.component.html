@@ -13,7 +13,6 @@
 
 <div class="footer">
     <p>Press and hold "Alt" to pan</p>
-    <p>Press and hold "Ctrl" while clicking space to log coordinates to console</p>
 </div>
 
 <svg canvasEvents
@@ -35,7 +34,7 @@
         [attr.transform]="transform"
         [id]="room.uri"
         (click)="selectRoom($event, room)"
-        [attr.fill]="room.color ? room.color : '#eee'"
+        [attr.fill]="room.selected ? selectedColor : room.color"
         class="room">
 
         <!-- Draw polygons -->
@@ -46,7 +45,7 @@
 
         <!-- Draw paths -->
         <path
-            [class.selected-space]="selectedRoom ? room.uri == selectedRoom.uri : false"
+            [class.selected-space]="room.selected"
             [attr.d]="room.path"
             class="polygon">
         </path> 

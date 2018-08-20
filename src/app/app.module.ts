@@ -10,6 +10,12 @@ import { MeshViewerModule } from 'ng-mesh-viewer';
 // Angular material
 import { MatButtonModule } from '@angular/material';
 
+// Draggable
+import { AngularDraggableModule } from 'angular2-draggable';
+
+// Markdown pipe
+import { MarkdownToHtmlModule } from 'markdown-to-html-pipe';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -22,7 +28,9 @@ import { AppComponent } from './app.component';
     PlanModule,
     MeshViewerModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularDraggableModule,
+    MarkdownToHtmlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

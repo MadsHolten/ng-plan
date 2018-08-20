@@ -21,7 +21,13 @@
 <!-- ng-mesh-viewer module -->
 <ng-mesh-viewer
     [hidden]="selectedButton != 'ng-mesh-viewer'"
+    [showCentroids]="true"
+    (clickedRoom)="log($event)"
     [data]="data">
 </ng-mesh-viewer>
 
-<!-- <ng-mesh-viewer2 [hidden]="selectedButton != 'ng-mesh-viewer'"></ng-mesh-viewer2> -->
+<!-- Popups -->
+<div *ngIf="query" ngDraggable class="drag-card">
+    <div [innerHTML]="query|MarkdownToHtml"></div>
+    <button mat-raised-button (click)="query = null">Got it!</button>
+</div>

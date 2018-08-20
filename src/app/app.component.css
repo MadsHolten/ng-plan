@@ -8,3 +8,14 @@
 .selected {
     color:red;
 }
+.drag-card{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    background-color: rgba(220,220,220,.6);
+    border-radius: 5px;
+    font-family: roboto;
+    font-size: 0.7em;
+    padding: 0px;
+    z-index: 110;
+}

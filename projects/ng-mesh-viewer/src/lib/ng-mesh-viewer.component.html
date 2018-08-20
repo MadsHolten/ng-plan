@@ -1,9 +1,7 @@
-<!-- <canvas 
+<canvas 
+    [ngClass] = "canvasClass"
     #canvas 
-    canvasEvents
-    (zoomIn)="zoomIn($event)"
-    (zoomOut)="zoomIn($event)"
-    (click)="onCanvasClick($event)"
-> -->
-<canvas #canvas>
+    (mousemove)="onMouseMove($event)"
+    (mousedown)="onMouseDown($event)"
+    (mouseup)="onMouseUp($event)">
 </canvas>

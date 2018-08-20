@@ -2,24 +2,24 @@ import { Injectable } from '@angular/core';
 import * as rdfstore from 'rdfstore';
 import { Observable, from } from "rxjs";
 import { map } from 'rxjs/operators';
-import * as path from 'path';
 import { HttpClient } from '@angular/common/http';
+import * as THREE from 'three';
 
 @Injectable()
 export class AppService {
 
-    private filePaths = [
-        "./assets/OSH-turtle/Duplex_A_BOT.ttl",
-        "./assets/OSH-turtle/Duplex_A_3D-spaces.ttl",
-        "./assets/OSH-turtle/Duplex_A_classes.ttl",
-        "./assets/OSH-turtle/Duplex_A_PROPS.ttl"
-    ]
     // private filePaths = [
-    //     "./assets/OSH-turtle/OSH_BOT.ttl",
-    //     "./assets/OSH-turtle/OSH_3D-spaces.ttl",
-    //     "./assets/OSH-turtle/OSH_classes.ttl",
-    //     "./assets/OSH-turtle/OSH_PROPS.ttl"
-    // ]
+    //     "./assets/Duplex/BOT.ttl",
+    //     "./assets/Duplex/classes.ttl",
+    //     "./assets/Duplex/PROPS.ttl",
+    //     "./assets/Duplex/geometry3d.ttl"
+    // ];
+    private filePaths = [
+        "./assets/OSH/BOT.ttl",
+        "./assets/OSH/geometry3d.ttl",
+        "./assets/OSH/classes.ttl",
+        "./assets/OSH/PROPS.ttl"
+    ];
     private store;
 
     constructor( public http: HttpClient ) { }
@@ -31,8 +31,25 @@ export class AppService {
 
     }
 
-    public getRooms3D(): Observable<any> {
+    public getType(uri): Observable<any> {
+        var q = `SELECT ?type WHERE {<${uri}> a ?type}`;
 
+        return from(this._loadAndQuery(q))
+            .pipe(
+                map(data => {
+                    var sp = data.filter(d => {
+                        return d.type.value == "https://w3id.org/bot#Space";
+                    });
+                    if(sp.length != 0){
+                        return "Space";
+                    }else{
+                        return "Element";
+                    }
+                })
+            );
+    }
+
+    public getElements3D(): Observable<any> {
         var q = `
             PREFIX bot:    <https://w3id.org/bot#>
             PREFIX props:  <https://w3id.org/props#>
@@ -40,12 +57,12 @@ export class AppService {
             PREFIX schema: <http://schema.org/>
             SELECT ?uri ?name ?geometry
             WHERE {
-                ?uri a bot:Space ;
+                ?uri a bot:Element ;
                     props:identityDataName/opm:hasPropertyState ?ns ;
                     bot:hasSimple3DModel ?geometry .
                 ?ns a opm:CurrentPropertyState ;
                     schema:value ?name .
-            }
+            } LIMIT 20
         `;
 
         return from(this._loadAndQuery(q))
@@ -58,6 +75,69 @@ export class AppService {
                                 geometry: item.geometry.value
                             }
                         })
+                    })
+                );
+    }
+
+    public getAdjElements(spaceURI): Observable<any> {
+        var q = `
+            PREFIX bot:    <https://w3id.org/bot#>\n
+            PREFIX props:  <https://w3id.org/props#>\n
+            PREFIX opm:    <https://w3id.org/opm#>\n
+            PREFIX schema: <http://schema.org/>\n
+            SELECT ?uri ?name ?geometry\n
+            WHERE {\n
+                <${spaceURI}> bot:adjacentElement ?uri .\n
+                ?uri props:identityDataName/opm:hasPropertyState ?ns ;\n
+                    bot:hasSimple3DModel ?geometry .\n
+                ?ns a opm:CurrentPropertyState ;\n
+                    schema:value ?name .\n
+            }
+        `;
+
+        return from(this._loadAndQuery(q))
+                .pipe(
+                    map(data => {
+                        var d = data.map(item => {
+                            return {
+                                name: item.name.value, 
+                                uri: item.uri.value,
+                                geometry: item.geometry.value
+                            }
+                        });
+                        return {data: d, query: q};
+                    })
+                );
+    }
+
+    public getRooms3D(): Observable<any> {
+
+        var q = `
+            PREFIX bot:    <https://w3id.org/bot#>\n
+            PREFIX props:  <https://w3id.org/props#>\n
+            PREFIX opm:    <https://w3id.org/opm#>\n
+            PREFIX schema: <http://schema.org/>\n
+            SELECT ?uri ?name ?geometry\n
+            WHERE {\n
+                \t?uri a bot:Space ;\n
+                \t\tprops:identityDataName/opm:hasPropertyState ?ns ;\n
+                \t\tbot:hasSimple3DModel ?geometry .\n
+                \t?ns a opm:CurrentPropertyState ;\n
+                \t\tschema:value ?name .\n
+            }
+        `;
+
+        return from(this._loadAndQuery(q))
+                .pipe(
+                    map(data => {
+                        var d = data.map(item => {
+                            return {
+                                name: item.name.value, 
+                                uri: item.uri.value,
+                                geometry: item.geometry.value
+                            }
+                        });
+                        return {data: d, query: q};
                     })
                 );
 
@@ -73,7 +153,7 @@ export class AppService {
             // Get file content
             var promises = [];
             for(var p of this.filePaths){
-                var promise = this.http.get(path.join(__dirname, p), {responseType: 'text'}).toPromise();
+                var promise = this.http.get(p, {responseType: 'text'}).toPromise();
                 promises.push(promise);
             }
     

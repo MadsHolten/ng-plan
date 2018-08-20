@@ -1,27 +1,25 @@
-import { Component, OnChanges, SimpleChanges, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnChanges, AfterViewInit, SimpleChanges, Input, ViewChild, ElementRef, HostListener, Output, EventEmitter } from '@angular/core';
 import * as THREE from 'three';
 import OBJLoader from 'three-obj-loader';
 OBJLoader(THREE);
 import { OrbitControls } from '@avatsaev/three-orbitcontrols-ts';
 import * as d3 from 'd3-scale-chromatic';
 
+import { NgMeshViewerService } from './ng-mesh-viewer.service';
+
+import { OBJGeometry } from './ng-mesh-viewer.service';
+
 @Component({
   selector: 'ng-mesh-viewer',
   templateUrl: 'ng-mesh-viewer.component.html',
-  styles: [`
-    canvas {
-        width: 100%;
-        height: 100%;
-    }
-    .button-row{
-      position: absolute;
-      z-index: 100;
-      float: right;
-    }
-  `]
+  styleUrls: ['ng-mesh-viewer.component.css'],
+  providers: [ NgMeshViewerService ]
 })
 
-export class NgMeshViewerComponent implements OnChanges {
+export class NgMeshViewerComponent implements OnChanges, AfterViewInit {
+
+  @Output() clickedRoom = new EventEmitter();             // Clicked room
+  @Output() clickedCanvas = new EventEmitter();
 
   public spaces;
   @Input() public data;           //JSON + obj
@@ -36,13 +34,23 @@ export class NgMeshViewerComponent implements OnChanges {
 
   // GEOMETRY
   public boundingBox: THREE.Box3; // Vounding box of full geometry
-  public centroid: THREE.Vector3; // Centroid of full geometry
+  public centroid: THREE.Vector3 = new THREE.Vector3(0.5,0.5,0.5);; // Centroid of full geometry
   public size: THREE.Vector3;     // Size of full geometry
+
+  public highlightMaterial = new THREE.MeshBasicMaterial( { color: 0x7c0a02, opacity: 1 } );
+  public hoverMaterial = new THREE.MeshBasicMaterial( { color: 0x000000, opacity: 0.2 } );
+
+  // SELECTION
+  public selected;                // Stores the selected object
+  public previousMaterial;        // Stores the color of the object which was previously selected/hovered
+  public previousHovered;         // Stores the object which was previously hovered
+  
+  public canvasClass: string = 'default';
 
   @ViewChild('canvas')
   private canvasRef: ElementRef;
 
-  constructor() {
+  constructor( private _s: NgMeshViewerService ) {
     this.render = this.render.bind(this);
   }
 
@@ -50,55 +58,65 @@ export class NgMeshViewerComponent implements OnChanges {
 
     if(Array.isArray(changes.data.currentValue)){
 
-      if(!this.data[0].geometry) return;
-
-      // Construct new objects
-      this.spaces = this.data.map(item => {
-        if(Array.isArray(item.geometry)){
-          item.geometry = item.geometry.join("\n");
-        }
-        return item;
-      });
-
-      // this.spaces = this.spaces[1];
-
       this.createScene();
-      this.appendMeshes(this.spaces);
-      this.createCamera();
+
+      // Perform geometry preprocessing
+      // Scales and offsets geometry to fit ([0,0,0], [1,1,1]) scene
+      var processed = this._s.processOBJ(this.data).then(res => {
+        this.spaces = res.zones;
+        console.log(this.spaces);
+        this.appendMeshes(this.spaces);
+      });
+      
       this.createRenderer();
+      this.createCamera();
       this.createControls();
       this.render();
-
     }
 
+  }
+
+  ngAfterViewInit() {
+    
   }
 
   public render() {
     this.renderer.render(this.scene, this.camera);
   }
 
-  private createScene() {
+  private createScene(): THREE.Scene {
       this.scene = new THREE.Scene();
 
-      // var light = new THREE.PointLight(0xffffff, 1, 1000);
-      // light.position.set(0, 0, 100);
-      // this.scene.add(light);
+      var ambient = new THREE.AmbientLight( 0x101030 );
+      this.scene.add( ambient );
 
-      // var light = new THREE.PointLight(0xffffff, 1, 1000);
-      // light.position.set(0, 0, -100);
-      // this.scene.add(light);
+      var light = new THREE.PointLight(0xffffff, 1, 1000);
+      light.position.set(0, 0, 1);
+      this.scene.add(light);
+
+      var light = new THREE.PointLight(0xffffff, 1, 1000);
+      light.position.set(0, 1, 1);
+      this.scene.add(light);
+
+      return this.scene;
   }
 
-  private appendMeshes(spaces) {
-    
-    // Initialize bbox
-    var bBoxFull = new THREE.Box3();
+  private createRenderer(): THREE.WebGLRenderer {
+    var canvas = this.canvasRef.nativeElement;
+    this.renderer = new THREE.WebGLRenderer( { canvas: canvas, antialias: true, alpha: true } );
+    this.renderer.setClearColor( 0xffffff, 0);
+    this.renderer.setSize( window.innerWidth, window.innerHeight );
+
+    return this.renderer;
+  }
+
+  private appendMeshes(spaces): void {
 
     // Add OBJ graphics
     var objLoader = new THREE.OBJLoader();
     var colorScheme = d3.schemeCategory10;
 
-    // Make array
+    // Convert to array if only single space received
     if(!Array.isArray(spaces)) spaces = [spaces];
 
     for(var space of spaces){
@@ -110,12 +128,12 @@ export class NgMeshViewerComponent implements OnChanges {
       // Define material
       var material = new THREE.MeshBasicMaterial( { color: color, side: THREE.DoubleSide, opacity: 0.5, transparent: true, depthWrite: false } );
 
-      myObj.name = space.name;
+      myObj.name = space.uri;
 
       var invalidPos;
       myObj.traverse(child => {
         if ( child instanceof THREE.Mesh ) {
-          child.name = space.name;
+          child.name = space.uri;
           child.material = material;
 
           // Get position attribute
@@ -127,9 +145,6 @@ export class NgMeshViewerComponent implements OnChanges {
       // Add if not position includes NaN value(s)
       if(!invalidPos){
         this.scene.add(myObj);
-
-        // Append to bounding box
-        bBoxFull.expandByObject(myObj);  
       
         if(this.showCentroids){
           // Get centroid of space
@@ -151,54 +166,40 @@ export class NgMeshViewerComponent implements OnChanges {
       }
     }
 
-    // Set the bounding box to the finally expanded bBoxFull
-    this.boundingBox = bBoxFull;
-
-    // Get centroid of full bounding box to set camera view location
-    var ct = new THREE.Vector3();
-    bBoxFull.getCenter(ct);
-    this.centroid = ct;
-
-    // Show bounding box
-    if(this.showBoundingBox){
-      var color = new THREE.Color( "red" );
-      var helper = new THREE.Box3Helper( bBoxFull, color );
-      this.scene.add( helper );
-    }
+    return;
     
   }
 
-  private createCamera() {
+  private createCamera(): THREE.Camera {
     let aspectRatio = this.getAspectRatio();
     var fov = 75;   // vertical field of view
     var near = 0.1; // near plane
-    var far = 2000;  // far plane
+    var far = 1000;  // far plane
 
     this.camera = new THREE.PerspectiveCamera( fov, aspectRatio, near, far );
-    this.camera.lookAt( this.centroid );
     this.camera.up.set(0,0,1);    // z-axis up
-    // this.zoomExtents();
-    
+    this.camera.lookAt( this.centroid );
+    this.camera.position.set(1.1, 0.5, 1.1);
+
+    // fov = 2 * Math.atan( height / ( 2 * dist ) ) * ( 180 / Math.PI );
+    this.camera.fov = 2 * Math.atan( 1 / ( 2 * 0.25 ) ) * ( 180 / Math.PI );
+
+    return this.camera;
   }
 
-  private createRenderer() {
-    var canvas = this.canvasRef.nativeElement;
-    this.renderer = new THREE.WebGLRenderer( { canvas: canvas, antialias: true, alpha: true } );
-    this.renderer.setClearColor( 0xffffff, 0);
-    this.renderer.setSize( window.innerWidth, window.innerHeight );
-  }
-
-  private createControls(){
+  private createControls(): THREE.OrbitControls {
     this.controls = new OrbitControls( this.camera, this.renderer.domElement );
     this.controls.minPolarAngle = 0;
     this.controls.maxPolarAngle = Math.PI;
-    this.controls.minDistance = -Infinity;
-    this.controls.maxDistance = Infinity;
+    this.controls.minDistance = 0;
+    this.controls.maxDistance = 10;
 
     // set camera to rotate around center of loaded object
     this.controls.target = this.centroid;
 
     this.controls.addEventListener('change', this.render);
+
+    return this.controls;
   }
 
   private getAspectRatio(): number {
@@ -210,98 +211,137 @@ export class NgMeshViewerComponent implements OnChanges {
       return canvas.clientWidth / canvas.clientHeight;
   }
 
-  private zoomExtents() {
+  /* EVENTS */
+  public onMouseDown(event: MouseEvent): void {
+    event.preventDefault();
 
-    var offset = 1.25;
+    // Unselect previously selected object
+    if(this.selected){
+      this.selected.material = this.previousMaterial;
+      this.selected = null;
+    }
 
-    // Get geometry size
-    var size = new THREE.Vector3();
-    this.boundingBox.getSize(size);
-    this.size = size;
+    // Define mouse click as (x,y) vector
+    var mouse = new THREE.Vector2();
+    mouse.x = (event.clientX / this.renderer.domElement.clientWidth) * 2 - 1;
+    mouse.y = - (event.clientY / this.renderer.domElement.clientHeight) * 2 + 1;
 
-    // Get bounding sphere
-    var sphere = new THREE.Sphere();
-    // this.boundingBox.getBoundingSphere(sphere);
+    var obj: any = this.intersectingMesh(mouse);
+    
+    // Change color
+    if(obj){
+      // Store
+      this.selected = obj;
+      this.previousMaterial = obj.material;
 
-    // Initially set camera to center of geometry
-    this.camera.position.set(this.centroid.x,this.centroid.y,this.centroid.z);
+      // Set new material
+      obj.material = this.highlightMaterial;
 
-    var fov = this.camera.fov * ( Math.PI / 180 );
-    // Calculate the camera distance
-    var distance = Math.abs( sphere.radius*2 / Math.sin( fov / 2 ) );
-    console.log(distance);
+      // Emit output
+      this.clickedRoom.emit({uri: obj.name});
+    }
+    this.render();
+    return;
 
-    // Move camera to the edge of the furthest away element + an offset factor
-    this.camera.translateZ(-(distance));
+  }
 
-    // Get distance from camera to nearest element
-    var dist = (sphere.radius * offset) - sphere.radius;
+  public onMouseMove(event: MouseEvent): void{
+    event.preventDefault();
 
-    // Height of object
-    var height = this.size.y;
+    if(!this.renderer) return;
 
-    // Set camera direction
-    this.camera.lookAt(this.centroid);
+    // Define mouse click as (x,y) vector
+    var mouse = new THREE.Vector2();
+    mouse.x = (event.clientX / this.renderer.domElement.clientWidth) * 2 - 1;
+    mouse.y = - (event.clientY / this.renderer.domElement.clientHeight) * 2 + 1;
 
-    // Set camera fof
-    // fov = 2 * Math.atan( height / ( 2 * dist ) ) * ( 180 / Math.PI );
-    this.camera.fov = 2 * Math.atan( height / ( 2 * dist ) ) * ( 180 / Math.PI );
+    var obj: any = this.intersectingMesh(mouse);
 
-    // Set camera far plan
-    this.camera.far = 30000;
-    this.camera.focus = dist;
+    if(obj) {
 
-    console.log(sphere);
+      // Save material for later if hover just initiated
+      if(obj != this.previousHovered){
+        this.canvasClass = "clickable"
 
-    this.camera.up.set(0,0,1);    // z-axis up
+        // // Restore material for previously hovered
+        // if(this.previousHovered){
+        //   this.previousHovered.material = this.previousMaterial;
+        // }
 
-    this.camera.updateMatrix();
+        // Set current object to previously hovered
+        this.previousHovered = obj;
+        // this.previousMaterial = obj.material;
 
-    // // get the max side of the bounding box (fits to width OR height as needed )
-    // const maxDim = Math.max( size.x, size.y, size.z );
-    // // const fov = this.camera.fov * ( Math.PI / 180 );
-    // let cameraZ = Math.abs( maxDim / 4 * Math.tan( fov * 2 ) );
+        // // Set hover material on object (if not selected)
+        // if(obj != this.selected){
+        //   obj.material = this.hoverMaterial;
+        // }
+        
+      }
+    }else{
+      if(this.previousHovered){
+        this.canvasClass = "default"
+        // if(this.previousHovered != this.selected){
+        //   // Restore material for previously hovered and set previously hovered to null
+        //   this.previousHovered.material = this.previousMaterial;
+        // }
+        this.previousHovered = null;
+      }
+    }
+    this.render();
 
-    // cameraZ *= offset; // zoom out a little so that objects don't fill the screen
+    return;
+  }
 
-    // // Position camera according to geometry size
-    // // this.camera.position.x = this.centroid.x > 0 ? this.centroid.x + 2*size.x : this.centroid.x - 2*size.x;
-    // // this.camera.position.y = this.centroid.y + 2*size.y;
-    // // this.camera.position.z = cameraZ;
+  private findAllObjects(pred: THREE.Object3D[], parent: THREE.Object3D): void {
+      // NOTE: Better to keep separate array of selected objects
+      if (parent.children.length > 0) {
+          parent.children.forEach((i) => {
+              pred.push(i);
+              this.findAllObjects(pred, i);              
+          });
+      }
+      return;
+  }
 
-    // const minZ = this.boundingBox.min.z;
-    // const cameraToFarEdge = ( minZ < 0 ) ? -minZ + cameraZ : cameraZ - minZ;
+  private intersectingMesh(mouse): THREE.Object3D {
 
-    // // this.camera.near = -10000;
-    // // this.camera.far = 10000;
-    // var fov = 2 * Math.atan( this.size.z / ( 2 * maxDim ) ) * ( 180 / Math.PI ); // in degrees
-    // this.camera.fov = fov;
+    // Get all objects in scene
+    var obj: THREE.Object3D[] = [];
+    this.findAllObjects(obj, this.scene);
 
-    // this.camera.up.set(0,0,1);    // z-axis up
+    // Create raycaster from camera towards mouse position
+    var raycaster = new THREE.Raycaster();
+    raycaster.setFromCamera(mouse, this.camera);
 
-    // console.log(this.centroid);
-    // console.log(this.size);
-    // this.camera.position.set(this.centroid.x,this.centroid.y,this.centroid.z);
-    // this.camera.translateY(-maxDim);
+    // Find intersecting objects
+    var intersects = raycaster.intersectObjects(obj);
 
-    // this.camera.updateMatrix();
+    if(intersects){
+      // Only interested in meshes
+      var a = intersects.filter(x => x.object.type == "Mesh")[0];
+      if(a) return a.object;
+    }
+    
+    return null;
 
-    // if ( this.controls ) {
-      
-    //   // set camera to rotate around center of loaded object
-    //   this.controls.target = this.centroid;
+  }
 
-    //   // // prevent camera from zooming out far enough to create far plane cutoff
-    //   // this.controls.maxDistance = cameraToFarEdge * 2;
+  public onMouseUp(event: MouseEvent): void {
+      // console.log("onMouseUp");
+  }
 
-    //   this.controls.saveState();
+  @HostListener('window:resize', ['$event'])
+  public onResize(event: Event): void {
+      this.canvasRef.nativeElement.style.width = "100%";
+      this.canvasRef.nativeElement.style.height = "100%";
+      console.log("onResize: " + this.canvasRef.nativeElement.clientWidth + ", " + this.canvasRef.nativeElement.clientHeight);
 
-    // } else {
-
-    //   this.camera.lookAt(this.centroid);
-
-    // }
-
+      this.camera.aspect = this.getAspectRatio();
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(this.canvasRef.nativeElement.clientWidth, this.canvasRef.nativeElement.clientHeight);
+      this.render();
+      return;
   }
 
 }

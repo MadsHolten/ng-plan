@@ -11,6 +11,7 @@ import { AppService } from './app.service';
 })
 export class AppComponent implements OnInit {
 
+  public query;
   public data;
   public selectedSpaces;
   public buttons = ["ng-plan", "ng-mesh-viewer"];
@@ -23,11 +24,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
     this.switchModule("ng-plan");
-
-    this._s.getQuery('SELECT * WHERE {?s ?p ?o} LIMIT 10').subscribe(res => {
-      // console.log(res);
-    }, err => console.log(err));
-
   }
 
   switchModule(name){
@@ -41,19 +37,36 @@ export class AppComponent implements OnInit {
     }
 
     if(name == "ng-mesh-viewer"){
-      // this.http.get('./assets/test-mesh.json').subscribe(res => {
-      //   this.data = res;
-      // })
 
       this._s.getRooms3D().subscribe(res => {
-        this.data = res;
+        this.data = res.data;
+        this.query = res.query;
       }, err => console.log(err));
+
     }
 
   }
 
   roomClick(ev){
     this.selectedSpaces = [ev.uri];
+  }
+
+  log(ev){
+    var uri = ev.uri;
+    console.log(uri);
+
+    this._s.getType(uri).subscribe(res => {
+      if(res == "Space"){
+        this._s.getAdjElements(uri).subscribe(res => {
+          this.data = res.data;
+          this.query = res.query;
+        }, err => console.log(err));
+      }else{
+        this.switchModule("ng-mesh-viewer");
+      }
+    }, err => console.log(err));
+
+    
   }
 
   canvasClick(){

@@ -1,3 +1,5 @@
+[demo](https://madsholten.github.io/ng-plan/)
+
 ### Ng-Plan
 
 This module will draw a 2D plan drawing from a geoJSON object. It was built to visualize 2D space boundaries from the Building Information Modeling (BIM) authring tool, Revit. It is quite generic, but does have some features that are mainly related to the work done by the W3C Linked Building Data ([LBD](https://www.w3.org/community/lbd/)) Community Group.

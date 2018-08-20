@@ -1,0 +1,2392 @@
+@prefix props:	<https://w3id.org/props#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:		<https://example.org/> .
+@prefix inst:	<https://niras.dk/projects/0001/> .
+@prefix cdt:	<http://w3id.org/lindt/custom_datatypes#> .
+@prefix opm:	<https://w3id.org/opm#> .
+@prefix seas:	<https://w3id.org/seas/> .
+@prefix schema:	<http://schema.org/> .
+
+### ELEMENTS ###
+
+# WALLS
+inst:wall_1xS3BCk291UvhgP2dvNtzh
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNtzh .
+inst:identityDataName_1xS3BCk291UvhgP2dvNtzh
+	opm:hasPropertyState inst:state_identityDataName_2aa8310f-d510-4576-8081-8e4be234092e .
+inst:state_identityDataName_2aa8310f-d510-4576-8081-8e4be234092e
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNtzh
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtzh .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtzh
+	opm:hasPropertyState inst:state_dimensionsWidth_1e490025-3abe-4435-a73f-5cd8f01d9044 .
+inst:state_dimensionsWidth_1e490025-3abe-4435-a73f-5cd8f01d9044
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtzh
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNtzh .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNtzh
+	opm:hasPropertyState inst:state_dimensionsLength_573a8579-c9ca-4c19-9665-c777b3a8ad4c .
+inst:state_dimensionsLength_573a8579-c9ca-4c19-9665-c777b3a8ad4c
+	a opm:CurrentPropertyState ;
+	schema:value "8383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNt_8
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNt_8 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNt_8
+	opm:hasPropertyState inst:state_identityDataName_43f1074b-e46a-41ef-837b-6c953320ffb9 .
+inst:state_identityDataName_43f1074b-e46a-41ef-837b-6c953320ffb9
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNt_8
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNt_8 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNt_8
+	opm:hasPropertyState inst:state_dimensionsWidth_39c242bf-cc22-4b11-a394-c076b1327407 .
+inst:state_dimensionsWidth_39c242bf-cc22-4b11-a394-c076b1327407
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNt_8
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNt_8 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNt_8
+	opm:hasPropertyState inst:state_dimensionsLength_31571cdf-5a7d-4f17-8539-f01fecc32910 .
+inst:state_dimensionsLength_31571cdf-5a7d-4f17-8539-f01fecc32910
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNt%24O
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNt%24O .
+inst:identityDataName_1xS3BCk291UvhgP2dvNt%24O
+	opm:hasPropertyState inst:state_identityDataName_756a7845-e00b-481d-98c7-ffdef884207c .
+inst:state_identityDataName_756a7845-e00b-481d-98c7-ffdef884207c
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNt%24O
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNt%24O .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNt%24O
+	opm:hasPropertyState inst:state_dimensionsWidth_37ce3d80-0c87-46d9-bcda-f832d855d23d .
+inst:state_dimensionsWidth_37ce3d80-0c87-46d9-bcda-f832d855d23d
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNt%24O
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNt%24O .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNt%24O
+	opm:hasPropertyState inst:state_dimensionsLength_43c2cf20-1128-4e66-b31f-07bf206a5eda .
+inst:state_dimensionsLength_43c2cf20-1128-4e66-b31f-07bf206a5eda
+	a opm:CurrentPropertyState ;
+	schema:value "8383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtXZ
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNtXZ .
+inst:identityDataName_1xS3BCk291UvhgP2dvNtXZ
+	opm:hasPropertyState inst:state_identityDataName_b8ac50a6-895b-4b2f-8881-d6c211f9c932 .
+inst:state_identityDataName_b8ac50a6-895b-4b2f-8881-d6c211f9c932
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNtXZ
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtXZ .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtXZ
+	opm:hasPropertyState inst:state_dimensionsWidth_9e6b42f6-91ae-45c8-9d41-1b9a834edb7d .
+inst:state_dimensionsWidth_9e6b42f6-91ae-45c8-9d41-1b9a834edb7d
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtXZ
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNtXZ .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNtXZ
+	opm:hasPropertyState inst:state_dimensionsLength_c3bbae6b-8775-4271-bbf5-1b882f0d987b .
+inst:state_dimensionsLength_c3bbae6b-8775-4271-bbf5-1b882f0d987b
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtbz
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNtbz .
+inst:identityDataName_1xS3BCk291UvhgP2dvNtbz
+	opm:hasPropertyState inst:state_identityDataName_7ec6e3f9-3f16-44a3-b524-2c7cb28f99b3 .
+inst:state_identityDataName_7ec6e3f9-3f16-44a3-b524-2c7cb28f99b3
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNtbz
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtbz .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtbz
+	opm:hasPropertyState inst:state_dimensionsWidth_3166f870-b70c-4d3b-9646-392632875a41 .
+inst:state_dimensionsWidth_3166f870-b70c-4d3b-9646-392632875a41
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtbz
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNtbz .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNtbz
+	opm:hasPropertyState inst:state_dimensionsLength_f03608cb-af02-469e-b469-475aaa18e428 .
+inst:state_dimensionsLength_f03608cb-af02-469e-b469-475aaa18e428
+	a opm:CurrentPropertyState ;
+	schema:value "3791.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtkY
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNtkY .
+inst:identityDataName_1xS3BCk291UvhgP2dvNtkY
+	opm:hasPropertyState inst:state_identityDataName_06bb5c42-35e7-4b87-83d0-7b36e37237f4 .
+inst:state_identityDataName_06bb5c42-35e7-4b87-83d0-7b36e37237f4
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNtkY
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtkY .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtkY
+	opm:hasPropertyState inst:state_dimensionsWidth_ca74f6ba-edce-4de0-8660-1f64adc834a8 .
+inst:state_dimensionsWidth_ca74f6ba-edce-4de0-8660-1f64adc834a8
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtkY
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNtkY .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNtkY
+	opm:hasPropertyState inst:state_dimensionsLength_b9f03725-aa97-4bd2-930f-2165cac8b7fc .
+inst:state_dimensionsLength_b9f03725-aa97-4bd2-930f-2165cac8b7fc
+	a opm:CurrentPropertyState ;
+	schema:value "3195 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtl7
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNtl7 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNtl7
+	opm:hasPropertyState inst:state_identityDataName_6a83ec01-266e-40ab-a106-ff1944da42ea .
+inst:state_identityDataName_6a83ec01-266e-40ab-a106-ff1944da42ea
+	a opm:CurrentPropertyState ;
+	schema:value "Party Wall - CMU Residential Unit Dimising Wall" .
+
+inst:wall_1xS3BCk291UvhgP2dvNtl7
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtl7 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNtl7
+	opm:hasPropertyState inst:state_dimensionsWidth_4faf4df8-4dc0-4a22-8dd4-ed88e81a8a73 .
+inst:state_dimensionsWidth_4faf4df8-4dc0-4a22-8dd4-ed88e81a8a73
+	a opm:CurrentPropertyState ;
+	schema:value "550 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNtl7
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNtl7 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNtl7
+	opm:hasPropertyState inst:state_dimensionsLength_43bbc991-5be3-4ab4-9987-af40f95f1ebd .
+inst:state_dimensionsLength_43bbc991-5be3-4ab4-9987-af40f95f1ebd
+	a opm:CurrentPropertyState ;
+	schema:value "4191.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqHs
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNqHs .
+inst:identityDataName_1xS3BCk291UvhgP2dvNqHs
+	opm:hasPropertyState inst:state_identityDataName_a4bde229-f9af-4afd-9231-19437a6265a5 .
+inst:state_identityDataName_a4bde229-f9af-4afd-9231-19437a6265a5
+	a opm:CurrentPropertyState ;
+	schema:value "Party Wall - CMU Residential Unit Dimising Wall" .
+
+inst:wall_1xS3BCk291UvhgP2dvNqHs
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqHs .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqHs
+	opm:hasPropertyState inst:state_dimensionsWidth_c13b8074-4fe1-43da-94a2-e006418b8b35 .
+inst:state_dimensionsWidth_c13b8074-4fe1-43da-94a2-e006418b8b35
+	a opm:CurrentPropertyState ;
+	schema:value "550 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqHs
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNqHs .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNqHs
+	opm:hasPropertyState inst:state_dimensionsLength_10f6eb9f-b846-4d10-8694-d6ff746a9c7a .
+inst:state_dimensionsLength_10f6eb9f-b846-4d10-8694-d6ff746a9c7a
+	a opm:CurrentPropertyState ;
+	schema:value "4191.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqHB
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNqHB .
+inst:identityDataName_1xS3BCk291UvhgP2dvNqHB
+	opm:hasPropertyState inst:state_identityDataName_3f75aa1f-4792-4eb6-8d01-aa7f42d2b6b7 .
+inst:state_identityDataName_3f75aa1f-4792-4eb6-8d01-aa7f42d2b6b7
+	a opm:CurrentPropertyState ;
+	schema:value "Party Wall - CMU Residential Unit Dimising Wall" .
+
+inst:wall_1xS3BCk291UvhgP2dvNqHB
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqHB .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqHB
+	opm:hasPropertyState inst:state_dimensionsWidth_d3b8b4d2-860f-43ac-9c43-abf12f4c8f74 .
+inst:state_dimensionsWidth_d3b8b4d2-860f-43ac-9c43-abf12f4c8f74
+	a opm:CurrentPropertyState ;
+	schema:value "550 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqHB
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNqHB .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNqHB
+	opm:hasPropertyState inst:state_dimensionsLength_23cd7a08-8dea-4cb0-9a5c-6fea80d8b6c8 .
+inst:state_dimensionsLength_23cd7a08-8dea-4cb0-9a5c-6fea80d8b6c8
+	a opm:CurrentPropertyState ;
+	schema:value "2200 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqM7
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNqM7 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNqM7
+	opm:hasPropertyState inst:state_identityDataName_5b035abc-833a-46ab-93f9-407c1a933825 .
+inst:state_identityDataName_5b035abc-833a-46ab-93f9-407c1a933825
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNqM7
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqM7 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqM7
+	opm:hasPropertyState inst:state_dimensionsWidth_9697c6cb-1736-4b50-b5b0-2a96f810d966 .
+inst:state_dimensionsWidth_9697c6cb-1736-4b50-b5b0-2a96f810d966
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqM7
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNqM7 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNqM7
+	opm:hasPropertyState inst:state_dimensionsLength_c71ea7ad-d6d6-4684-8467-288cd933d611 .
+inst:state_dimensionsLength_c71ea7ad-d6d6-4684-8467-288cd933d611
+	a opm:CurrentPropertyState ;
+	schema:value "3195 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqOY
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNqOY .
+inst:identityDataName_1xS3BCk291UvhgP2dvNqOY
+	opm:hasPropertyState inst:state_identityDataName_3e5bb2ef-e3dc-415b-bda6-1b9a5b245cf2 .
+inst:state_identityDataName_3e5bb2ef-e3dc-415b-bda6-1b9a5b245cf2
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNqOY
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqOY .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqOY
+	opm:hasPropertyState inst:state_dimensionsWidth_3ba54d0e-a5a6-46fb-9c2c-a1adfe747811 .
+inst:state_dimensionsWidth_3ba54d0e-a5a6-46fb-9c2c-a1adfe747811
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqOY
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNqOY .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNqOY
+	opm:hasPropertyState inst:state_dimensionsLength_ca12c0c1-b7db-4281-8cc0-3c57a67a7ce1 .
+inst:state_dimensionsLength_ca12c0c1-b7db-4281-8cc0-3c57a67a7ce1
+	a opm:CurrentPropertyState ;
+	schema:value "1594 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqQ6
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNqQ6 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNqQ6
+	opm:hasPropertyState inst:state_identityDataName_b5765e53-31dc-4aa9-a16e-7b9522eda96e .
+inst:state_identityDataName_b5765e53-31dc-4aa9-a16e-7b9522eda96e
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNqQ6
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqQ6 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqQ6
+	opm:hasPropertyState inst:state_dimensionsWidth_d7b46651-6de1-4a0f-aefd-d7a42119284f .
+inst:state_dimensionsWidth_d7b46651-6de1-4a0f-aefd-d7a42119284f
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqQ6
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNqQ6 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNqQ6
+	opm:hasPropertyState inst:state_dimensionsLength_19eda41c-bc9b-439b-971e-9d906d1b4d9b .
+inst:state_dimensionsLength_19eda41c-bc9b-439b-971e-9d906d1b4d9b
+	a opm:CurrentPropertyState ;
+	schema:value "3791.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq2Q
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNq2Q .
+inst:identityDataName_1xS3BCk291UvhgP2dvNq2Q
+	opm:hasPropertyState inst:state_identityDataName_62c5ae67-8a2c-44b6-aebd-c15564021888 .
+inst:state_identityDataName_62c5ae67-8a2c-44b6-aebd-c15564021888
+	a opm:CurrentPropertyState ;
+	schema:value "Foundation - Concrete (417mm)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNq2Q
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq2Q .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq2Q
+	opm:hasPropertyState inst:state_dimensionsWidth_3b9f887e-a07e-419e-8aff-04ce228b34b4 .
+inst:state_dimensionsWidth_3b9f887e-a07e-419e-8aff-04ce228b34b4
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq2Q
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNq2Q .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNq2Q
+	opm:hasPropertyState inst:state_dimensionsLength_047606e7-e694-465e-bb10-0943604966e4 .
+inst:state_dimensionsLength_047606e7-e694-465e-bb10-0943604966e4
+	a opm:CurrentPropertyState ;
+	schema:value "8383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq3D
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNq3D .
+inst:identityDataName_1xS3BCk291UvhgP2dvNq3D
+	opm:hasPropertyState inst:state_identityDataName_81ff761a-0735-4d61-b211-2c653e5f91b8 .
+inst:state_identityDataName_81ff761a-0735-4d61-b211-2c653e5f91b8
+	a opm:CurrentPropertyState ;
+	schema:value "Foundation - Concrete (417mm)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNq3D
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq3D .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq3D
+	opm:hasPropertyState inst:state_dimensionsWidth_f1c89b54-542f-4c91-83c3-bca7bc83e9db .
+inst:state_dimensionsWidth_f1c89b54-542f-4c91-83c3-bca7bc83e9db
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq3D
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNq3D .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNq3D
+	opm:hasPropertyState inst:state_dimensionsLength_827ab209-1ff0-4518-b7af-4b09b7a94e95 .
+inst:state_dimensionsLength_827ab209-1ff0-4518-b7af-4b09b7a94e95
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq4l
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNq4l .
+inst:identityDataName_1xS3BCk291UvhgP2dvNq4l
+	opm:hasPropertyState inst:state_identityDataName_fbf7cafb-2117-43cd-b790-e94b9174ed98 .
+inst:state_identityDataName_fbf7cafb-2117-43cd-b790-e94b9174ed98
+	a opm:CurrentPropertyState ;
+	schema:value "Foundation - Concrete (417mm)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNq4l
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq4l .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq4l
+	opm:hasPropertyState inst:state_dimensionsWidth_427364bc-54c3-42fe-9253-a44da5e0ed9d .
+inst:state_dimensionsWidth_427364bc-54c3-42fe-9253-a44da5e0ed9d
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq4l
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNq4l .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNq4l
+	opm:hasPropertyState inst:state_dimensionsLength_2dd6994b-169d-4d04-821a-343731867bed .
+inst:state_dimensionsLength_2dd6994b-169d-4d04-821a-343731867bed
+	a opm:CurrentPropertyState ;
+	schema:value "8383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq4V
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNq4V .
+inst:identityDataName_1xS3BCk291UvhgP2dvNq4V
+	opm:hasPropertyState inst:state_identityDataName_cbfe7c2e-b343-490f-ba43-8ca1bbf87c65 .
+inst:state_identityDataName_cbfe7c2e-b343-490f-ba43-8ca1bbf87c65
+	a opm:CurrentPropertyState ;
+	schema:value "Foundation - Concrete (417mm)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNq4V
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq4V .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq4V
+	opm:hasPropertyState inst:state_dimensionsWidth_8e7938c7-669d-4644-aca0-910e4113fb22 .
+inst:state_dimensionsWidth_8e7938c7-669d-4644-aca0-910e4113fb22
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq4V
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNq4V .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNq4V
+	opm:hasPropertyState inst:state_dimensionsLength_651cb8f7-5661-468e-b741-df1e8f20612d .
+inst:state_dimensionsLength_651cb8f7-5661-468e-b741-df1e8f20612d
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq9K
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNq9K .
+inst:identityDataName_1xS3BCk291UvhgP2dvNq9K
+	opm:hasPropertyState inst:state_identityDataName_c77a4498-9b07-42c8-aac5-588f1d9509f9 .
+inst:state_identityDataName_c77a4498-9b07-42c8-aac5-588f1d9509f9
+	a opm:CurrentPropertyState ;
+	schema:value "Foundation - Concrete (435mm)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNq9K
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq9K .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNq9K
+	opm:hasPropertyState inst:state_dimensionsWidth_098f2d50-fe9b-49ca-b23a-355fc5ac6050 .
+inst:state_dimensionsWidth_098f2d50-fe9b-49ca-b23a-355fc5ac6050
+	a opm:CurrentPropertyState ;
+	schema:value "435 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNq9K
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNq9K .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNq9K
+	opm:hasPropertyState inst:state_dimensionsLength_17f5b473-fdfd-4efe-a59b-ec2540263467 .
+inst:state_dimensionsLength_17f5b473-fdfd-4efe-a59b-ec2540263467
+	a opm:CurrentPropertyState ;
+	schema:value "4191.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqAU
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNqAU .
+inst:identityDataName_1xS3BCk291UvhgP2dvNqAU
+	opm:hasPropertyState inst:state_identityDataName_1f5db860-415f-4db6-90c1-eea29e497708 .
+inst:state_identityDataName_1f5db860-415f-4db6-90c1-eea29e497708
+	a opm:CurrentPropertyState ;
+	schema:value "Foundation - Concrete (435mm)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNqAU
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqAU .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqAU
+	opm:hasPropertyState inst:state_dimensionsWidth_52a04c06-ef1f-4936-9a66-13a6e9e63384 .
+inst:state_dimensionsWidth_52a04c06-ef1f-4936-9a66-13a6e9e63384
+	a opm:CurrentPropertyState ;
+	schema:value "435 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqAU
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNqAU .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNqAU
+	opm:hasPropertyState inst:state_dimensionsLength_da8faed6-35c0-40b5-9d28-2e94c5b33c6b .
+inst:state_dimensionsLength_da8faed6-35c0-40b5-9d28-2e94c5b33c6b
+	a opm:CurrentPropertyState ;
+	schema:value "4191.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqB%24
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNqB%24 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNqB%24
+	opm:hasPropertyState inst:state_identityDataName_a8e49488-d259-415b-b2d8-be2d5e917452 .
+inst:state_identityDataName_a8e49488-d259-415b-b2d8-be2d5e917452
+	a opm:CurrentPropertyState ;
+	schema:value "Foundation - Concrete (435mm)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNqB%24
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqB%24 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqB%24
+	opm:hasPropertyState inst:state_dimensionsWidth_1ad09c4a-1b7b-4e7e-97c4-d9a5d8757b7a .
+inst:state_dimensionsWidth_1ad09c4a-1b7b-4e7e-97c4-d9a5d8757b7a
+	a opm:CurrentPropertyState ;
+	schema:value "435 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqB%24
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNqB%24 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNqB%24
+	opm:hasPropertyState inst:state_dimensionsLength_5dac63d4-6050-4c56-821e-1beb8505380d .
+inst:state_dimensionsLength_5dac63d4-6050-4c56-821e-1beb8505380d
+	a opm:CurrentPropertyState ;
+	schema:value "2200 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqkY
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNqkY .
+inst:identityDataName_1xS3BCk291UvhgP2dvNqkY
+	opm:hasPropertyState inst:state_identityDataName_115cd5ab-2307-4b8b-bf40-769942184ad2 .
+inst:state_identityDataName_115cd5ab-2307-4b8b-bf40-769942184ad2
+	a opm:CurrentPropertyState ;
+	schema:value "Party Wall - CMU Residential Unit Dimising Wall" .
+
+inst:wall_1xS3BCk291UvhgP2dvNqkY
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqkY .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNqkY
+	opm:hasPropertyState inst:state_dimensionsWidth_85799e61-dba5-496c-b9f6-6e574901cb38 .
+inst:state_dimensionsWidth_85799e61-dba5-496c-b9f6-6e574901cb38
+	a opm:CurrentPropertyState ;
+	schema:value "550 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNqkY
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNqkY .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNqkY
+	opm:hasPropertyState inst:state_dimensionsLength_e5b13c4c-a30b-43fc-aaba-1df340f2e886 .
+inst:state_dimensionsLength_e5b13c4c-a30b-43fc-aaba-1df340f2e886
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrGN
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrGN .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrGN
+	opm:hasPropertyState inst:state_identityDataName_631f89be-55ea-4d9e-9239-07ad2bbd4122 .
+inst:state_identityDataName_631f89be-55ea-4d9e-9239-07ad2bbd4122
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrGN
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrGN .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrGN
+	opm:hasPropertyState inst:state_dimensionsWidth_a57e865b-aec4-4f30-9d13-424fe1899c91 .
+inst:state_dimensionsWidth_a57e865b-aec4-4f30-9d13-424fe1899c91
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrGN
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrGN .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrGN
+	opm:hasPropertyState inst:state_dimensionsLength_2172cb45-b18d-4e66-be5e-689f85832f76 .
+inst:state_dimensionsLength_2172cb45-b18d-4e66-be5e-689f85832f76
+	a opm:CurrentPropertyState ;
+	schema:value "8383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrHJ
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrHJ .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrHJ
+	opm:hasPropertyState inst:state_identityDataName_cc4a49ac-7565-46de-90fd-6df08e2e44b0 .
+inst:state_identityDataName_cc4a49ac-7565-46de-90fd-6df08e2e44b0
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrHJ
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrHJ .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrHJ
+	opm:hasPropertyState inst:state_dimensionsWidth_7f0aeaa6-b069-4bdf-8926-a7afb7f1f17f .
+inst:state_dimensionsWidth_7f0aeaa6-b069-4bdf-8926-a7afb7f1f17f
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrHJ
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrHJ .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrHJ
+	opm:hasPropertyState inst:state_dimensionsLength_877fe280-4373-4926-88a3-2edc52fd46ca .
+inst:state_dimensionsLength_877fe280-4373-4926-88a3-2edc52fd46ca
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrIB
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrIB .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrIB
+	opm:hasPropertyState inst:state_identityDataName_a03cd0de-c525-420e-98e3-abd57debd0d3 .
+inst:state_identityDataName_a03cd0de-c525-420e-98e3-abd57debd0d3
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrIB
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrIB .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrIB
+	opm:hasPropertyState inst:state_dimensionsWidth_0fc2bb9d-6c47-402c-bb19-01de05815d67 .
+inst:state_dimensionsWidth_0fc2bb9d-6c47-402c-bb19-01de05815d67
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrIB
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrIB .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrIB
+	opm:hasPropertyState inst:state_dimensionsLength_05b92a45-eb6e-4065-a99a-e6c37e76ec4b .
+inst:state_dimensionsLength_05b92a45-eb6e-4065-a99a-e6c37e76ec4b
+	a opm:CurrentPropertyState ;
+	schema:value "8383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrJ3
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrJ3 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrJ3
+	opm:hasPropertyState inst:state_identityDataName_d996595e-33fb-4348-8e7d-c218f74c49f9 .
+inst:state_identityDataName_d996595e-33fb-4348-8e7d-c218f74c49f9
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrJ3
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrJ3 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrJ3
+	opm:hasPropertyState inst:state_dimensionsWidth_03ecb0ee-fba0-4265-89c6-77b27a4150c4 .
+inst:state_dimensionsWidth_03ecb0ee-fba0-4265-89c6-77b27a4150c4
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrJ3
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrJ3 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrJ3
+	opm:hasPropertyState inst:state_dimensionsLength_56223031-9906-4105-83e0-8785c04c051e .
+inst:state_dimensionsLength_56223031-9906-4105-83e0-8785c04c051e
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrNL
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrNL .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrNL
+	opm:hasPropertyState inst:state_identityDataName_85690838-e90f-4e9d-a88f-5bddfe93202c .
+inst:state_identityDataName_85690838-e90f-4e9d-a88f-5bddfe93202c
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrNL
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrNL .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrNL
+	opm:hasPropertyState inst:state_dimensionsWidth_76ea5617-0430-4298-8bcf-86e23baa1d19 .
+inst:state_dimensionsWidth_76ea5617-0430-4298-8bcf-86e23baa1d19
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrNL
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrNL .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrNL
+	opm:hasPropertyState inst:state_dimensionsLength_0b338058-81bb-43c9-8824-ff85e6a1eac1 .
+inst:state_dimensionsLength_0b338058-81bb-43c9-8824-ff85e6a1eac1
+	a opm:CurrentPropertyState ;
+	schema:value "2235.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrOK
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrOK .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrOK
+	opm:hasPropertyState inst:state_identityDataName_97961035-ae23-4af4-bee2-cb9f45316df2 .
+inst:state_identityDataName_97961035-ae23-4af4-bee2-cb9f45316df2
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrOK
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrOK .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrOK
+	opm:hasPropertyState inst:state_dimensionsWidth_ead62f4d-e8ce-4dc3-a3f7-408f66c17024 .
+inst:state_dimensionsWidth_ead62f4d-e8ce-4dc3-a3f7-408f66c17024
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrOK
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrOK .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrOK
+	opm:hasPropertyState inst:state_dimensionsLength_4df21970-7055-4158-8c81-829f683bae15 .
+inst:state_dimensionsLength_4df21970-7055-4158-8c81-829f683bae15
+	a opm:CurrentPropertyState ;
+	schema:value "5424 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrPz
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrPz .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrPz
+	opm:hasPropertyState inst:state_identityDataName_fbf5fd00-f247-45bd-80fb-1e5a7a428d31 .
+inst:state_identityDataName_fbf5fd00-f247-45bd-80fb-1e5a7a428d31
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrPz
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrPz .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrPz
+	opm:hasPropertyState inst:state_dimensionsWidth_84fb1663-3287-4cf8-9919-0d870707c21b .
+inst:state_dimensionsWidth_84fb1663-3287-4cf8-9919-0d870707c21b
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrPz
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrPz .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrPz
+	opm:hasPropertyState inst:state_dimensionsLength_f7ed079f-ef45-4a5a-b2dc-83a164e05d7a .
+inst:state_dimensionsLength_f7ed079f-ef45-4a5a-b2dc-83a164e05d7a
+	a opm:CurrentPropertyState ;
+	schema:value "2235.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrSl
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrSl .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrSl
+	opm:hasPropertyState inst:state_identityDataName_b3996dc6-d45e-433e-8422-8d8b9dbe1aee .
+inst:state_identityDataName_b3996dc6-d45e-433e-8422-8d8b9dbe1aee
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Plumbing (152mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrSl
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrSl .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrSl
+	opm:hasPropertyState inst:state_dimensionsWidth_73ebff19-4e63-4f52-8252-6ae35d82f4dd .
+inst:state_dimensionsWidth_73ebff19-4e63-4f52-8252-6ae35d82f4dd
+	a opm:CurrentPropertyState ;
+	schema:value "184 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrSl
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrSl .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrSl
+	opm:hasPropertyState inst:state_dimensionsLength_c872b8f7-252c-429c-82c0-e675ebde2c38 .
+inst:state_dimensionsLength_c872b8f7-252c-429c-82c0-e675ebde2c38
+	a opm:CurrentPropertyState ;
+	schema:value "1956 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrU8
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrU8 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrU8
+	opm:hasPropertyState inst:state_identityDataName_851a74c0-15a5-44f0-a2cc-a589eade665d .
+inst:state_identityDataName_851a74c0-15a5-44f0-a2cc-a589eade665d
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNrU8
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrU8 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNrU8
+	opm:hasPropertyState inst:state_dimensionsWidth_567ed5f7-9ac6-45c5-907e-9d5adeb40395 .
+inst:state_dimensionsWidth_567ed5f7-9ac6-45c5-907e-9d5adeb40395
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNrU8
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNrU8 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNrU8
+	opm:hasPropertyState inst:state_dimensionsLength_e4b63c65-4a83-4087-9aea-abff61f1c7d6 .
+inst:state_dimensionsLength_e4b63c65-4a83-4087-9aea-abff61f1c7d6
+	a opm:CurrentPropertyState ;
+	schema:value "1956 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr2Z
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNr2Z .
+inst:identityDataName_1xS3BCk291UvhgP2dvNr2Z
+	opm:hasPropertyState inst:state_identityDataName_ecf2c222-34b8-4239-9418-bddf6764e65e .
+inst:state_identityDataName_ecf2c222-34b8-4239-9418-bddf6764e65e
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNr2Z
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr2Z .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr2Z
+	opm:hasPropertyState inst:state_dimensionsWidth_5ceea8e7-0783-425e-8566-7c4f37fb2341 .
+inst:state_dimensionsWidth_5ceea8e7-0783-425e-8566-7c4f37fb2341
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr2Z
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNr2Z .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNr2Z
+	opm:hasPropertyState inst:state_dimensionsLength_e5f689e9-8193-4dee-8ef3-525915044aa3 .
+inst:state_dimensionsLength_e5f689e9-8193-4dee-8ef3-525915044aa3
+	a opm:CurrentPropertyState ;
+	schema:value "2235.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr3l
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNr3l .
+inst:identityDataName_1xS3BCk291UvhgP2dvNr3l
+	opm:hasPropertyState inst:state_identityDataName_e44318d5-9088-49a9-8ab0-769ddfa3c01c .
+inst:state_identityDataName_e44318d5-9088-49a9-8ab0-769ddfa3c01c
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNr3l
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr3l .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr3l
+	opm:hasPropertyState inst:state_dimensionsWidth_0970705a-6f1d-437c-9dfe-c8f1a67e0303 .
+inst:state_dimensionsWidth_0970705a-6f1d-437c-9dfe-c8f1a67e0303
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr3l
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNr3l .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNr3l
+	opm:hasPropertyState inst:state_dimensionsLength_884c13ea-5ffd-448c-8dc7-190ceb4d7e4f .
+inst:state_dimensionsLength_884c13ea-5ffd-448c-8dc7-190ceb4d7e4f
+	a opm:CurrentPropertyState ;
+	schema:value "5424 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr3S
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNr3S .
+inst:identityDataName_1xS3BCk291UvhgP2dvNr3S
+	opm:hasPropertyState inst:state_identityDataName_4acfca58-a76e-4f92-896f-d4f41be2c5a4 .
+inst:state_identityDataName_4acfca58-a76e-4f92-896f-d4f41be2c5a4
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNr3S
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr3S .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr3S
+	opm:hasPropertyState inst:state_dimensionsWidth_505aa38c-d6dd-4a71-af14-d1136527ee51 .
+inst:state_dimensionsWidth_505aa38c-d6dd-4a71-af14-d1136527ee51
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr3S
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNr3S .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNr3S
+	opm:hasPropertyState inst:state_dimensionsLength_179be2e6-5a06-416d-b467-a55e06e21512 .
+inst:state_dimensionsLength_179be2e6-5a06-416d-b467-a55e06e21512
+	a opm:CurrentPropertyState ;
+	schema:value "2235.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr49
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNr49 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNr49
+	opm:hasPropertyState inst:state_identityDataName_1890436b-78e8-441b-92a6-49565d856bd6 .
+inst:state_identityDataName_1890436b-78e8-441b-92a6-49565d856bd6
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNr49
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr49 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr49
+	opm:hasPropertyState inst:state_dimensionsWidth_652b8fb7-edae-415b-92d5-5f878289780f .
+inst:state_dimensionsWidth_652b8fb7-edae-415b-92d5-5f878289780f
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr49
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNr49 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNr49
+	opm:hasPropertyState inst:state_dimensionsLength_986507ed-df1c-48a9-abc0-06682666d24d .
+inst:state_dimensionsLength_986507ed-df1c-48a9-abc0-06682666d24d
+	a opm:CurrentPropertyState ;
+	schema:value "1956 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr6g
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNr6g .
+inst:identityDataName_1xS3BCk291UvhgP2dvNr6g
+	opm:hasPropertyState inst:state_identityDataName_6ce8cf55-838c-47a3-9a32-1c6d022803eb .
+inst:state_identityDataName_6ce8cf55-838c-47a3-9a32-1c6d022803eb
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Plumbing (152mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNr6g
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr6g .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNr6g
+	opm:hasPropertyState inst:state_dimensionsWidth_fe4f7faf-c7b2-4d4e-87b9-94eff8f60103 .
+inst:state_dimensionsWidth_fe4f7faf-c7b2-4d4e-87b9-94eff8f60103
+	a opm:CurrentPropertyState ;
+	schema:value "184 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNr6g
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNr6g .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNr6g
+	opm:hasPropertyState inst:state_dimensionsLength_d6d77e4d-3302-4c9f-9880-3ff46c6eda09 .
+inst:state_dimensionsLength_d6d77e4d-3302-4c9f-9880-3ff46c6eda09
+	a opm:CurrentPropertyState ;
+	schema:value "1956 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNxPL
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNxPL .
+inst:identityDataName_1xS3BCk291UvhgP2dvNxPL
+	opm:hasPropertyState inst:state_identityDataName_67c45de5-3872-40d7-b1c8-6d1a026c79c9 .
+inst:state_identityDataName_67c45de5-3872-40d7-b1c8-6d1a026c79c9
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNxPL
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNxPL .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNxPL
+	opm:hasPropertyState inst:state_dimensionsWidth_80b47313-6e23-4e27-87a6-cc1c10b72ee5 .
+inst:state_dimensionsWidth_80b47313-6e23-4e27-87a6-cc1c10b72ee5
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNxPL
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNxPL .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNxPL
+	opm:hasPropertyState inst:state_dimensionsLength_505a7cc6-3a34-4b54-806c-b835d64dae6d .
+inst:state_dimensionsLength_505a7cc6-3a34-4b54-806c-b835d64dae6d
+	a opm:CurrentPropertyState ;
+	schema:value "8383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNxQJ
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNxQJ .
+inst:identityDataName_1xS3BCk291UvhgP2dvNxQJ
+	opm:hasPropertyState inst:state_identityDataName_8c557338-67ea-4ab0-a38e-5476359bf469 .
+inst:state_identityDataName_8c557338-67ea-4ab0-a38e-5476359bf469
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNxQJ
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNxQJ .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNxQJ
+	opm:hasPropertyState inst:state_dimensionsWidth_98ccf55d-0d15-4001-881a-588254864275 .
+inst:state_dimensionsWidth_98ccf55d-0d15-4001-881a-588254864275
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNxQJ
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNxQJ .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNxQJ
+	opm:hasPropertyState inst:state_dimensionsLength_eb37e803-be84-4db3-8024-811d756af0ff .
+inst:state_dimensionsLength_eb37e803-be84-4db3-8024-811d756af0ff
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNxRD
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNxRD .
+inst:identityDataName_1xS3BCk291UvhgP2dvNxRD
+	opm:hasPropertyState inst:state_identityDataName_4bb8071a-e631-429c-bd32-cba1589940db .
+inst:state_identityDataName_4bb8071a-e631-429c-bd32-cba1589940db
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNxRD
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNxRD .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNxRD
+	opm:hasPropertyState inst:state_dimensionsWidth_bf7af23e-e432-4eb2-9168-c5f59b0dab6f .
+inst:state_dimensionsWidth_bf7af23e-e432-4eb2-9168-c5f59b0dab6f
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNxRD
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNxRD .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNxRD
+	opm:hasPropertyState inst:state_dimensionsLength_869c8db1-6169-44a9-ad55-1f6c33fdf74c .
+inst:state_dimensionsLength_869c8db1-6169-44a9-ad55-1f6c33fdf74c
+	a opm:CurrentPropertyState ;
+	schema:value "8383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNxSe
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNxSe .
+inst:identityDataName_1xS3BCk291UvhgP2dvNxSe
+	opm:hasPropertyState inst:state_identityDataName_b93d6bde-e4d1-4f77-ae01-cd9eef1b2c2c .
+inst:state_identityDataName_b93d6bde-e4d1-4f77-ae01-cd9eef1b2c2c
+	a opm:CurrentPropertyState ;
+	schema:value "Exterior - Brick on Block" .
+
+inst:wall_1xS3BCk291UvhgP2dvNxSe
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNxSe .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNxSe
+	opm:hasPropertyState inst:state_dimensionsWidth_6b586360-7cf1-4a35-9e16-7dc6fbf33d7d .
+inst:state_dimensionsWidth_6b586360-7cf1-4a35-9e16-7dc6fbf33d7d
+	a opm:CurrentPropertyState ;
+	schema:value "417 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNxSe
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNxSe .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNxSe
+	opm:hasPropertyState inst:state_dimensionsLength_c27f560d-3d68-412a-bc09-0497af725c63 .
+inst:state_dimensionsLength_c27f560d-3d68-412a-bc09-0497af725c63
+	a opm:CurrentPropertyState ;
+	schema:value "17383 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNuQt
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNuQt .
+inst:identityDataName_1xS3BCk291UvhgP2dvNuQt
+	opm:hasPropertyState inst:state_identityDataName_98662ba5-b808-4215-8dfa-9a37616c67f0 .
+inst:state_identityDataName_98662ba5-b808-4215-8dfa-9a37616c67f0
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (152 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNuQt
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNuQt .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNuQt
+	opm:hasPropertyState inst:state_dimensionsWidth_06477afe-421c-4150-95e6-b2cc3648b8ee .
+inst:state_dimensionsWidth_06477afe-421c-4150-95e6-b2cc3648b8ee
+	a opm:CurrentPropertyState ;
+	schema:value "152 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNuQt
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNuQt .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNuQt
+	opm:hasPropertyState inst:state_dimensionsLength_ad1b020a-7e30-4398-bf80-f54e238821a2 .
+inst:state_dimensionsLength_ad1b020a-7e30-4398-bf80-f54e238821a2
+	a opm:CurrentPropertyState ;
+	schema:value "4485.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNu7e
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNu7e .
+inst:identityDataName_1xS3BCk291UvhgP2dvNu7e
+	opm:hasPropertyState inst:state_identityDataName_faa2c92f-9c6b-4c48-9726-efef50dfe1f2 .
+inst:state_identityDataName_faa2c92f-9c6b-4c48-9726-efef50dfe1f2
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (152 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNu7e
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNu7e .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNu7e
+	opm:hasPropertyState inst:state_dimensionsWidth_4b9e30d7-fa42-4ede-afad-f4fe1ab221aa .
+inst:state_dimensionsWidth_4b9e30d7-fa42-4ede-afad-f4fe1ab221aa
+	a opm:CurrentPropertyState ;
+	schema:value "152 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNu7e
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNu7e .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNu7e
+	opm:hasPropertyState inst:state_dimensionsLength_cb7958c2-8d83-44e2-8342-892fa989bbf1 .
+inst:state_dimensionsLength_cb7958c2-8d83-44e2-8342-892fa989bbf1
+	a opm:CurrentPropertyState ;
+	schema:value "2508 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNuAP
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNuAP .
+inst:identityDataName_1xS3BCk291UvhgP2dvNuAP
+	opm:hasPropertyState inst:state_identityDataName_22aef833-ae61-463f-aef4-db0d01fe4f64 .
+inst:state_identityDataName_22aef833-ae61-463f-aef4-db0d01fe4f64
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNuAP
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNuAP .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNuAP
+	opm:hasPropertyState inst:state_dimensionsWidth_4eedff25-495a-4678-9c7f-b9af7cfe4c1a .
+inst:state_dimensionsWidth_4eedff25-495a-4678-9c7f-b9af7cfe4c1a
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNuAP
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNuAP .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNuAP
+	opm:hasPropertyState inst:state_dimensionsLength_d79c7aa1-99cb-406c-a5f4-9566cec73135 .
+inst:state_dimensionsLength_d79c7aa1-99cb-406c-a5f4-9566cec73135
+	a opm:CurrentPropertyState ;
+	schema:value "1594 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNuqJ
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNuqJ .
+inst:identityDataName_1xS3BCk291UvhgP2dvNuqJ
+	opm:hasPropertyState inst:state_identityDataName_7f4e8721-3209-4073-8c53-08d15364cc55 .
+inst:state_identityDataName_7f4e8721-3209-4073-8c53-08d15364cc55
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (152 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNuqJ
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNuqJ .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNuqJ
+	opm:hasPropertyState inst:state_dimensionsWidth_fdaa477a-cc5f-4d5e-a6e2-1e384be14297 .
+inst:state_dimensionsWidth_fdaa477a-cc5f-4d5e-a6e2-1e384be14297
+	a opm:CurrentPropertyState ;
+	schema:value "152 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNuqJ
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNuqJ .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNuqJ
+	opm:hasPropertyState inst:state_dimensionsLength_cda5efba-930b-4731-8e9a-4944865c2b49 .
+inst:state_dimensionsLength_cda5efba-930b-4731-8e9a-4944865c2b49
+	a opm:CurrentPropertyState ;
+	schema:value "2508 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNutm
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNutm .
+inst:identityDataName_1xS3BCk291UvhgP2dvNutm
+	opm:hasPropertyState inst:state_identityDataName_9b0a5989-2bef-4df0-8f5d-c39b64b52ca5 .
+inst:state_identityDataName_9b0a5989-2bef-4df0-8f5d-c39b64b52ca5
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (152 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNutm
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNutm .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNutm
+	opm:hasPropertyState inst:state_dimensionsWidth_a4abc3ae-e262-4d75-b70a-badd687691cb .
+inst:state_dimensionsWidth_a4abc3ae-e262-4d75-b70a-badd687691cb
+	a opm:CurrentPropertyState ;
+	schema:value "152 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNutm
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNutm .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNutm
+	opm:hasPropertyState inst:state_dimensionsLength_0db61eb7-d51e-41a5-a256-dbeae9c1f795 .
+inst:state_dimensionsLength_0db61eb7-d51e-41a5-a256-dbeae9c1f795
+	a opm:CurrentPropertyState ;
+	schema:value "4485.5 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNvRw
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvRw .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvRw
+	opm:hasPropertyState inst:state_identityDataName_6053b3e5-8f7b-41f5-add3-e3d42c067ac0 .
+inst:state_identityDataName_6053b3e5-8f7b-41f5-add3-e3d42c067ac0
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (152 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNvRw
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNvRw .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNvRw
+	opm:hasPropertyState inst:state_dimensionsWidth_6ff8d322-c88f-4475-aed6-33a33528be12 .
+inst:state_dimensionsWidth_6ff8d322-c88f-4475-aed6-33a33528be12
+	a opm:CurrentPropertyState ;
+	schema:value "152 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNvRw
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNvRw .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNvRw
+	opm:hasPropertyState inst:state_dimensionsLength_2d7924d2-100e-4675-9438-54265cbb50bf .
+inst:state_dimensionsLength_2d7924d2-100e-4675-9438-54265cbb50bf
+	a opm:CurrentPropertyState ;
+	schema:value "4314 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNv9J
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNv9J .
+inst:identityDataName_1xS3BCk291UvhgP2dvNv9J
+	opm:hasPropertyState inst:state_identityDataName_397c3fbe-7880-4917-8040-2bacafa326b9 .
+inst:state_identityDataName_397c3fbe-7880-4917-8040-2bacafa326b9
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (152 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNv9J
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNv9J .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNv9J
+	opm:hasPropertyState inst:state_dimensionsWidth_cbdc8c04-1df3-4cf3-a0a1-b97ab8ecfebc .
+inst:state_dimensionsWidth_cbdc8c04-1df3-4cf3-a0a1-b97ab8ecfebc
+	a opm:CurrentPropertyState ;
+	schema:value "152 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNv9J
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNv9J .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNv9J
+	opm:hasPropertyState inst:state_dimensionsLength_347410e3-89b9-4e3d-abf0-ab98cdae2d10 .
+inst:state_dimensionsLength_347410e3-89b9-4e3d-abf0-ab98cdae2d10
+	a opm:CurrentPropertyState ;
+	schema:value "4314 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNdvs
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNdvs .
+inst:identityDataName_1xS3BCk291UvhgP2dvNdvs
+	opm:hasPropertyState inst:state_identityDataName_93f4294b-5f4d-4779-b492-b5b5083cb89a .
+inst:state_identityDataName_93f4294b-5f4d-4779-b492-b5b5083cb89a
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNdvs
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNdvs .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNdvs
+	opm:hasPropertyState inst:state_dimensionsWidth_0447e34b-8c59-4948-9fab-519ccda4c2c0 .
+inst:state_dimensionsWidth_0447e34b-8c59-4948-9fab-519ccda4c2c0
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNdvs
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNdvs .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNdvs
+	opm:hasPropertyState inst:state_dimensionsLength_3767151e-70eb-45fc-98f6-d240895e69ad .
+inst:state_dimensionsLength_3767151e-70eb-45fc-98f6-d240895e69ad
+	a opm:CurrentPropertyState ;
+	schema:value "1662 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNdZx
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNdZx .
+inst:identityDataName_1xS3BCk291UvhgP2dvNdZx
+	opm:hasPropertyState inst:state_identityDataName_647a36e9-5960-4438-8488-fc1a48c108bd .
+inst:state_identityDataName_647a36e9-5960-4438-8488-fc1a48c108bd
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNdZx
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNdZx .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNdZx
+	opm:hasPropertyState inst:state_dimensionsWidth_c00bf7c0-70d6-4e16-9d0c-db9b32fcef35 .
+inst:state_dimensionsWidth_c00bf7c0-70d6-4e16-9d0c-db9b32fcef35
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNdZx
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNdZx .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNdZx
+	opm:hasPropertyState inst:state_dimensionsLength_c6bcb260-51d5-48e1-80a5-7d3ec580caf9 .
+inst:state_dimensionsLength_c6bcb260-51d5-48e1-80a5-7d3ec580caf9
+	a opm:CurrentPropertyState ;
+	schema:value "1662 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNdef
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNdef .
+inst:identityDataName_1xS3BCk291UvhgP2dvNdef
+	opm:hasPropertyState inst:state_identityDataName_38672a3f-fc11-4d9a-9ef6-d7c24e9e180e .
+inst:state_identityDataName_38672a3f-fc11-4d9a-9ef6-d7c24e9e180e
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNdef
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNdef .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNdef
+	opm:hasPropertyState inst:state_dimensionsWidth_17d4a693-8070-4d16-a479-0a4f6514b871 .
+inst:state_dimensionsWidth_17d4a693-8070-4d16-a479-0a4f6514b871
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNdef
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNdef .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNdef
+	opm:hasPropertyState inst:state_dimensionsLength_5a6c1370-c8f8-4d46-af98-5eb42e7ce37e .
+inst:state_dimensionsLength_5a6c1370-c8f8-4d46-af98-5eb42e7ce37e
+	a opm:CurrentPropertyState ;
+	schema:value "3812 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNdhe
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNdhe .
+inst:identityDataName_1xS3BCk291UvhgP2dvNdhe
+	opm:hasPropertyState inst:state_identityDataName_5c1cacb4-cf13-4fb7-b2cf-bf9c5424e4d8 .
+inst:state_identityDataName_5c1cacb4-cf13-4fb7-b2cf-bf9c5424e4d8
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Partition (92mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNdhe
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNdhe .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNdhe
+	opm:hasPropertyState inst:state_dimensionsWidth_215fa73b-0948-4c34-8360-245d8a26c370 .
+inst:state_dimensionsWidth_215fa73b-0948-4c34-8360-245d8a26c370
+	a opm:CurrentPropertyState ;
+	schema:value "124 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNdhe
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNdhe .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNdhe
+	opm:hasPropertyState inst:state_dimensionsLength_78cb17d0-e509-45f7-a587-4313ad7336df .
+inst:state_dimensionsLength_78cb17d0-e509-45f7-a587-4313ad7336df
+	a opm:CurrentPropertyState ;
+	schema:value "3812 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLZ
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNZLZ .
+inst:identityDataName_1xS3BCk291UvhgP2dvNZLZ
+	opm:hasPropertyState inst:state_identityDataName_d655d25f-64ff-4d12-a11b-ff79ca6155a6 .
+inst:state_identityDataName_d655d25f-64ff-4d12-a11b-ff79ca6155a6
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (38 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLZ
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZLZ .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZLZ
+	opm:hasPropertyState inst:state_dimensionsWidth_f95a1131-7a88-484c-a996-01de97309442 .
+inst:state_dimensionsWidth_f95a1131-7a88-484c-a996-01de97309442
+	a opm:CurrentPropertyState ;
+	schema:value "54 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLZ
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNZLZ .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNZLZ
+	opm:hasPropertyState inst:state_dimensionsLength_afd5e558-ee11-4663-9bfa-4329ca63b331 .
+inst:state_dimensionsLength_afd5e558-ee11-4663-9bfa-4329ca63b331
+	a opm:CurrentPropertyState ;
+	schema:value "1083.1 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLY
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNZLY .
+inst:identityDataName_1xS3BCk291UvhgP2dvNZLY
+	opm:hasPropertyState inst:state_identityDataName_2527cd7f-a54c-4fee-b277-aaaf9dd83c83 .
+inst:state_identityDataName_2527cd7f-a54c-4fee-b277-aaaf9dd83c83
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (38 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLY
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZLY .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZLY
+	opm:hasPropertyState inst:state_dimensionsWidth_63450b03-aa50-4df0-97a8-dd2cdcd9d01b .
+inst:state_dimensionsWidth_63450b03-aa50-4df0-97a8-dd2cdcd9d01b
+	a opm:CurrentPropertyState ;
+	schema:value "54 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLY
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNZLY .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNZLY
+	opm:hasPropertyState inst:state_dimensionsLength_960e02b4-0394-4494-b250-41b4aa05301f .
+inst:state_dimensionsLength_960e02b4-0394-4494-b250-41b4aa05301f
+	a opm:CurrentPropertyState ;
+	schema:value "1135.1 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLj
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNZLj .
+inst:identityDataName_1xS3BCk291UvhgP2dvNZLj
+	opm:hasPropertyState inst:state_identityDataName_142e7806-8e64-4780-9a6e-8b2ccd215a2a .
+inst:state_identityDataName_142e7806-8e64-4780-9a6e-8b2ccd215a2a
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (38 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLj
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZLj .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZLj
+	opm:hasPropertyState inst:state_dimensionsWidth_ccaa3290-186c-4178-a409-4a161931f846 .
+inst:state_dimensionsWidth_ccaa3290-186c-4178-a409-4a161931f846
+	a opm:CurrentPropertyState ;
+	schema:value "54 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLj
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNZLj .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNZLj
+	opm:hasPropertyState inst:state_dimensionsLength_c94c7750-7aa2-4f83-b917-c88e2d21415f .
+inst:state_dimensionsLength_c94c7750-7aa2-4f83-b917-c88e2d21415f
+	a opm:CurrentPropertyState ;
+	schema:value "1083.1 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLi
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNZLi .
+inst:identityDataName_1xS3BCk291UvhgP2dvNZLi
+	opm:hasPropertyState inst:state_identityDataName_cfe5162c-2e8f-44d9-92ab-ebbf05d70849 .
+inst:state_identityDataName_cfe5162c-2e8f-44d9-92ab-ebbf05d70849
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (38 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLi
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZLi .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZLi
+	opm:hasPropertyState inst:state_dimensionsWidth_088a9c7b-46ba-4d63-8ab9-5b3573f22aea .
+inst:state_dimensionsWidth_088a9c7b-46ba-4d63-8ab9-5b3573f22aea
+	a opm:CurrentPropertyState ;
+	schema:value "54 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZLi
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNZLi .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNZLi
+	opm:hasPropertyState inst:state_dimensionsLength_709b77f5-6592-46e0-9ba5-427e5f72b245 .
+inst:state_dimensionsLength_709b77f5-6592-46e0-9ba5-427e5f72b245
+	a opm:CurrentPropertyState ;
+	schema:value "1135.1 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNC
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNZNC .
+inst:identityDataName_1xS3BCk291UvhgP2dvNZNC
+	opm:hasPropertyState inst:state_identityDataName_45db4885-bc8b-4685-a207-a831a318404b .
+inst:state_identityDataName_45db4885-bc8b-4685-a207-a831a318404b
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (38 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNC
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZNC .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZNC
+	opm:hasPropertyState inst:state_dimensionsWidth_075679f2-268c-4592-8eac-ec3e967ca4df .
+inst:state_dimensionsWidth_075679f2-268c-4592-8eac-ec3e967ca4df
+	a opm:CurrentPropertyState ;
+	schema:value "54 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNC
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNZNC .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNZNC
+	opm:hasPropertyState inst:state_dimensionsLength_ecd89372-c063-4165-9336-5849bf5889b9 .
+inst:state_dimensionsLength_ecd89372-c063-4165-9336-5849bf5889b9
+	a opm:CurrentPropertyState ;
+	schema:value "1083.1 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNF
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNZNF .
+inst:identityDataName_1xS3BCk291UvhgP2dvNZNF
+	opm:hasPropertyState inst:state_identityDataName_28dbbf6f-a9a7-4c57-92d8-720cf6208f8c .
+inst:state_identityDataName_28dbbf6f-a9a7-4c57-92d8-720cf6208f8c
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (38 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNF
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZNF .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZNF
+	opm:hasPropertyState inst:state_dimensionsWidth_fe473981-32d5-4078-a677-f7454b769311 .
+inst:state_dimensionsWidth_fe473981-32d5-4078-a677-f7454b769311
+	a opm:CurrentPropertyState ;
+	schema:value "54 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNF
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNZNF .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNZNF
+	opm:hasPropertyState inst:state_dimensionsLength_a208b564-8556-4a9c-8116-46e97fe00856 .
+inst:state_dimensionsLength_a208b564-8556-4a9c-8116-46e97fe00856
+	a opm:CurrentPropertyState ;
+	schema:value "1135.1 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNE
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNZNE .
+inst:identityDataName_1xS3BCk291UvhgP2dvNZNE
+	opm:hasPropertyState inst:state_identityDataName_8235d074-5389-4e70-bc22-cd300059dbbf .
+inst:state_identityDataName_8235d074-5389-4e70-bc22-cd300059dbbf
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (38 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNE
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZNE .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZNE
+	opm:hasPropertyState inst:state_dimensionsWidth_e27bfbce-0029-4f24-a454-92d547c9567b .
+inst:state_dimensionsWidth_e27bfbce-0029-4f24-a454-92d547c9567b
+	a opm:CurrentPropertyState ;
+	schema:value "54 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZNE
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNZNE .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNZNE
+	opm:hasPropertyState inst:state_dimensionsLength_8afa4ca6-e055-4723-b569-4341173679fb .
+inst:state_dimensionsLength_8afa4ca6-e055-4723-b569-4341173679fb
+	a opm:CurrentPropertyState ;
+	schema:value "1083.1 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZN9
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNZN9 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNZN9
+	opm:hasPropertyState inst:state_identityDataName_867d2700-1ace-4fe3-bfd3-5638b6f04c8f .
+inst:state_identityDataName_867d2700-1ace-4fe3-bfd3-5638b6f04c8f
+	a opm:CurrentPropertyState ;
+	schema:value "Interior - Furring (38 mm Stud)" .
+
+inst:wall_1xS3BCk291UvhgP2dvNZN9
+	props:dimensionsWidth inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZN9 .
+inst:dimensionsWidth_1xS3BCk291UvhgP2dvNZN9
+	opm:hasPropertyState inst:state_dimensionsWidth_fcab9392-8a21-4ae5-b863-6fdb30fbe1fc .
+inst:state_dimensionsWidth_fcab9392-8a21-4ae5-b863-6fdb30fbe1fc
+	a opm:CurrentPropertyState ;
+	schema:value "54 mm"^^cdt:length .
+
+inst:wall_1xS3BCk291UvhgP2dvNZN9
+	props:dimensionsLength inst:dimensionsLength_1xS3BCk291UvhgP2dvNZN9 .
+inst:dimensionsLength_1xS3BCk291UvhgP2dvNZN9
+	opm:hasPropertyState inst:state_dimensionsLength_ebdff6ca-66f9-4186-92b2-0b27c2da6498 .
+inst:state_dimensionsLength_ebdff6ca-66f9-4186-92b2-0b27c2da6498
+	a opm:CurrentPropertyState ;
+	schema:value "1135.1 mm"^^cdt:length .
+
+
+# WINDOWS & DOORS
+inst:window_1xS3BCk291UvhgP2dvNrrP
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrrP .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrrP
+	opm:hasPropertyState inst:state_identityDataName_eb50a1eb-5eec-45de-8f19-b28895893585 .
+inst:state_identityDataName_eb50a1eb-5eec-45de-8f19-b28895893585
+	a opm:CurrentPropertyState ;
+	schema:value "4835mm x 2420mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNrv5
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrv5 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrv5
+	opm:hasPropertyState inst:state_identityDataName_f84f6b94-6827-4cf1-bcb1-f81079ce1a61 .
+inst:state_identityDataName_f84f6b94-6827-4cf1-bcb1-f81079ce1a61
+	a opm:CurrentPropertyState ;
+	schema:value "4835mm x 2420mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNrY1
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrY1 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrY1
+	opm:hasPropertyState inst:state_identityDataName_658c8cea-bded-4a72-b435-d3c98d6f3b45 .
+inst:state_identityDataName_658c8cea-bded-4a72-b435-d3c98d6f3b45
+	a opm:CurrentPropertyState ;
+	schema:value "1250mm x 2010mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNrZJ
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrZJ .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrZJ
+	opm:hasPropertyState inst:state_identityDataName_c64541bd-b813-4330-a69b-bb0001f30c5d .
+inst:state_identityDataName_c64541bd-b813-4330-a69b-bb0001f30c5d
+	a opm:CurrentPropertyState ;
+	schema:value "1250mm x 2010mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNrdW
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrdW .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrdW
+	opm:hasPropertyState inst:state_identityDataName_3f12c017-51d6-43a3-be8b-3533628ba2e3 .
+inst:state_identityDataName_3f12c017-51d6-43a3-be8b-3533628ba2e3
+	a opm:CurrentPropertyState ;
+	schema:value "750mm x 2200mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNrfE
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNrfE .
+inst:identityDataName_1xS3BCk291UvhgP2dvNrfE
+	opm:hasPropertyState inst:state_identityDataName_3a038c7c-e964-4ad9-827f-3a7ba3f82b12 .
+inst:state_identityDataName_3a038c7c-e964-4ad9-827f-3a7ba3f82b12
+	a opm:CurrentPropertyState ;
+	schema:value "750mm x 2200mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNoJ3
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNoJ3 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNoJ3
+	opm:hasPropertyState inst:state_identityDataName_01cd1ed8-abc2-4809-a06d-20cc17f05ebb .
+inst:state_identityDataName_01cd1ed8-abc2-4809-a06d-20cc17f05ebb
+	a opm:CurrentPropertyState ;
+	schema:value "2800mm x 2410mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNoO%24
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNoO%24 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNoO%24
+	opm:hasPropertyState inst:state_identityDataName_aab8e994-109f-45dd-8ecb-d3e96f559e4e .
+inst:state_identityDataName_aab8e994-109f-45dd-8ecb-d3e96f559e4e
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNo1Q
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNo1Q .
+inst:identityDataName_1xS3BCk291UvhgP2dvNo1Q
+	opm:hasPropertyState inst:state_identityDataName_dc3f9318-166b-4846-9779-05f7ca2ac2f5 .
+inst:state_identityDataName_dc3f9318-166b-4846-9779-05f7ca2ac2f5
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNo3N
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNo3N .
+inst:identityDataName_1xS3BCk291UvhgP2dvNo3N
+	opm:hasPropertyState inst:state_identityDataName_c0fce620-3099-4635-938e-ba57c4ffcfb4 .
+inst:state_identityDataName_c0fce620-3099-4635-938e-ba57c4ffcfb4
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNoCx
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNoCx .
+inst:identityDataName_1xS3BCk291UvhgP2dvNoCx
+	opm:hasPropertyState inst:state_identityDataName_e20b9910-2305-44a0-8874-cf99c8428d1f .
+inst:state_identityDataName_e20b9910-2305-44a0-8874-cf99c8428d1f
+	a opm:CurrentPropertyState ;
+	schema:value "2800mm x 2410mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNom4
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNom4 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNom4
+	opm:hasPropertyState inst:state_identityDataName_7cba655b-72e8-40d2-9762-fec6cf49324b .
+inst:state_identityDataName_7cba655b-72e8-40d2-9762-fec6cf49324b
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNopD
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNopD .
+inst:identityDataName_1xS3BCk291UvhgP2dvNopD
+	opm:hasPropertyState inst:state_identityDataName_800f959a-d861-40e0-869b-a5a6877e6112 .
+inst:state_identityDataName_800f959a-d861-40e0-869b-a5a6877e6112
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNos1
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNos1 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNos1
+	opm:hasPropertyState inst:state_identityDataName_4b434cac-ced7-42ef-9265-ddfb2047fa01 .
+inst:state_identityDataName_4b434cac-ced7-42ef-9265-ddfb2047fa01
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNowu
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNowu .
+inst:identityDataName_1xS3BCk291UvhgP2dvNowu
+	opm:hasPropertyState inst:state_identityDataName_bbfb587a-1f1d-4b65-b9ea-4f4b38e414d5 .
+inst:state_identityDataName_bbfb587a-1f1d-4b65-b9ea-4f4b38e414d5
+	a opm:CurrentPropertyState ;
+	schema:value "0762 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNoxK
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNoxK .
+inst:identityDataName_1xS3BCk291UvhgP2dvNoxK
+	opm:hasPropertyState inst:state_identityDataName_1245c48a-8a89-43d0-8bf1-d080c5548a47 .
+inst:state_identityDataName_1245c48a-8a89-43d0-8bf1-d080c5548a47
+	a opm:CurrentPropertyState ;
+	schema:value "0762 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNozF
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNozF .
+inst:identityDataName_1xS3BCk291UvhgP2dvNozF
+	opm:hasPropertyState inst:state_identityDataName_3d52f7ff-ce73-4406-bea4-bc6ef5a39016 .
+inst:state_identityDataName_3d52f7ff-ce73-4406-bea4-bc6ef5a39016
+	a opm:CurrentPropertyState ;
+	schema:value "0864 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNo%24h
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNo%24h .
+inst:identityDataName_1xS3BCk291UvhgP2dvNo%24h
+	opm:hasPropertyState inst:state_identityDataName_2d036114-d989-4f76-aedb-40594ede95f9 .
+inst:state_identityDataName_2d036114-d989-4f76-aedb-40594ede95f9
+	a opm:CurrentPropertyState ;
+	schema:value "0864 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNmlJ
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNmlJ .
+inst:identityDataName_1xS3BCk291UvhgP2dvNmlJ
+	opm:hasPropertyState inst:state_identityDataName_8581e5f0-2c78-4510-8eca-388be79daaab .
+inst:state_identityDataName_8581e5f0-2c78-4510-8eca-388be79daaab
+	a opm:CurrentPropertyState ;
+	schema:value "0864 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNnH%24
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNnH%24 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNnH%24
+	opm:hasPropertyState inst:state_identityDataName_27c41311-7f10-43b1-b3d8-15fd140046ae .
+inst:state_identityDataName_27c41311-7f10-43b1-b3d8-15fd140046ae
+	a opm:CurrentPropertyState ;
+	schema:value "0864 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNnLa
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNnLa .
+inst:identityDataName_1xS3BCk291UvhgP2dvNnLa
+	opm:hasPropertyState inst:state_identityDataName_79b6af0e-aff9-4043-979b-025449c967db .
+inst:state_identityDataName_79b6af0e-aff9-4043-979b-025449c967db
+	a opm:CurrentPropertyState ;
+	schema:value "0864 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNnNr
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNnNr .
+inst:identityDataName_1xS3BCk291UvhgP2dvNnNr
+	opm:hasPropertyState inst:state_identityDataName_9ab7d86a-ad42-472b-8280-273a3ac88937 .
+inst:state_identityDataName_9ab7d86a-ad42-472b-8280-273a3ac88937
+	a opm:CurrentPropertyState ;
+	schema:value "0864 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvN%24je
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvN%24je .
+inst:identityDataName_1xS3BCk291UvhgP2dvN%24je
+	opm:hasPropertyState inst:state_identityDataName_f41dbf79-6667-40cf-998c-6a1b7ad49526 .
+inst:state_identityDataName_f41dbf79-6667-40cf-998c-6a1b7ad49526
+	a opm:CurrentPropertyState ;
+	schema:value "0813 x 2420mm" .
+
+inst:door_1xS3BCk291UvhgP2dvN%24lY
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvN%24lY .
+inst:identityDataName_1xS3BCk291UvhgP2dvN%24lY
+	opm:hasPropertyState inst:state_identityDataName_5d90b6c3-4d9d-4bca-af60-19a7e66d90cf .
+inst:state_identityDataName_5d90b6c3-4d9d-4bca-af60-19a7e66d90cf
+	a opm:CurrentPropertyState ;
+	schema:value "0813 x 2420mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNwHx
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNwHx .
+inst:identityDataName_1xS3BCk291UvhgP2dvNwHx
+	opm:hasPropertyState inst:state_identityDataName_2510ee79-eb1b-43cf-8eb5-332f68f18510 .
+inst:state_identityDataName_2510ee79-eb1b-43cf-8eb5-332f68f18510
+	a opm:CurrentPropertyState ;
+	schema:value "2800mm x 2410mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNwMI
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNwMI .
+inst:identityDataName_1xS3BCk291UvhgP2dvNwMI
+	opm:hasPropertyState inst:state_identityDataName_8885819d-ed3c-4f69-a45e-aac5608ebe33 .
+inst:state_identityDataName_8885819d-ed3c-4f69-a45e-aac5608ebe33
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNwQb
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNwQb .
+inst:identityDataName_1xS3BCk291UvhgP2dvNwQb
+	opm:hasPropertyState inst:state_identityDataName_99e1910e-22b3-4bd5-a243-777d541b96af .
+inst:state_identityDataName_99e1910e-22b3-4bd5-a243-777d541b96af
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNwSd
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNwSd .
+inst:identityDataName_1xS3BCk291UvhgP2dvNwSd
+	opm:hasPropertyState inst:state_identityDataName_161a592c-3889-4a62-86da-a281fc174812 .
+inst:state_identityDataName_161a592c-3889-4a62-86da-a281fc174812
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNwTD
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNwTD .
+inst:identityDataName_1xS3BCk291UvhgP2dvNwTD
+	opm:hasPropertyState inst:state_identityDataName_3b92c3ac-7663-4c07-bbc7-fca2e4a36adb .
+inst:state_identityDataName_3b92c3ac-7663-4c07-bbc7-fca2e4a36adb
+	a opm:CurrentPropertyState ;
+	schema:value "2800mm x 2410mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNw00
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNw00 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNw00
+	opm:hasPropertyState inst:state_identityDataName_6372ef81-42fe-4a95-a1fc-b28ee3baeca4 .
+inst:state_identityDataName_6372ef81-42fe-4a95-a1fc-b28ee3baeca4
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNw49
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNw49 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNw49
+	opm:hasPropertyState inst:state_identityDataName_9b06e91a-94de-4f93-b4c1-4653e1cfe73d .
+inst:state_identityDataName_9b06e91a-94de-4f93-b4c1-4653e1cfe73d
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNw5g
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNw5g .
+inst:identityDataName_1xS3BCk291UvhgP2dvNw5g
+	opm:hasPropertyState inst:state_identityDataName_3219798c-b52a-456f-8876-54acc7128902 .
+inst:state_identityDataName_3219798c-b52a-456f-8876-54acc7128902
+	a opm:CurrentPropertyState ;
+	schema:value "819mm x 759mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNwAF
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNwAF .
+inst:identityDataName_1xS3BCk291UvhgP2dvNwAF
+	opm:hasPropertyState inst:state_identityDataName_4499b532-bb2e-4436-9670-76a4a7ee3f6e .
+inst:state_identityDataName_4499b532-bb2e-4436-9670-76a4a7ee3f6e
+	a opm:CurrentPropertyState ;
+	schema:value "750mm x 2200mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNwDm
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNwDm .
+inst:identityDataName_1xS3BCk291UvhgP2dvNwDm
+	opm:hasPropertyState inst:state_identityDataName_335643cb-6b57-4f33-9590-65ac95d5be4a .
+inst:state_identityDataName_335643cb-6b57-4f33-9590-65ac95d5be4a
+	a opm:CurrentPropertyState ;
+	schema:value "750mm x 2200mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNxVS
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNxVS .
+inst:identityDataName_1xS3BCk291UvhgP2dvNxVS
+	opm:hasPropertyState inst:state_identityDataName_f4fce5d1-1687-4020-a21f-8135d7e73729 .
+inst:state_identityDataName_f4fce5d1-1687-4020-a21f-8135d7e73729
+	a opm:CurrentPropertyState ;
+	schema:value "1180 x 1170mm" .
+
+inst:window_1xS3BCk291UvhgP2dvNx5J
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNx5J .
+inst:identityDataName_1xS3BCk291UvhgP2dvNx5J
+	opm:hasPropertyState inst:state_identityDataName_fb0a0b31-090e-45e8-a1e9-6f46a5a0942c .
+inst:state_identityDataName_fb0a0b31-090e-45e8-a1e9-6f46a5a0942c
+	a opm:CurrentPropertyState ;
+	schema:value "1180 x 1170mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNd%24j
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNd%24j .
+inst:identityDataName_1xS3BCk291UvhgP2dvNd%24j
+	opm:hasPropertyState inst:state_identityDataName_b1965eff-a505-43dc-890d-22e5de774d5c .
+inst:state_identityDataName_b1965eff-a505-43dc-890d-22e5de774d5c
+	a opm:CurrentPropertyState ;
+	schema:value "0762 x 2032mm" .
+
+inst:door_1xS3BCk291UvhgP2dvNdad
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNdad .
+inst:identityDataName_1xS3BCk291UvhgP2dvNdad
+	opm:hasPropertyState inst:state_identityDataName_1e7b5f82-ca5d-474a-b5b6-a285f236e8f4 .
+inst:state_identityDataName_1e7b5f82-ca5d-474a-b5b6-a285f236e8f4
+	a opm:CurrentPropertyState ;
+	schema:value "0762 x 2032mm" .
+
+inst:level_1xS3BCk291UvhgP2dvNMKI
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNMKI .
+inst:identityDataName_1xS3BCk291UvhgP2dvNMKI
+	opm:hasPropertyState inst:state_identityDataName_fdee602d-219c-47d2-8f45-5d2235800cd8 .
+inst:state_identityDataName_fdee602d-219c-47d2-8f45-5d2235800cd8
+	a opm:CurrentPropertyState ;
+	schema:value "Level 1" .
+
+inst:level_1xS3BCk291UvhgP2dvNMQJ
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNMQJ .
+inst:identityDataName_1xS3BCk291UvhgP2dvNMQJ
+	opm:hasPropertyState inst:state_identityDataName_d5a2b47f-7373-41f6-a543-311de77b007c .
+inst:state_identityDataName_d5a2b47f-7373-41f6-a543-311de77b007c
+	a opm:CurrentPropertyState ;
+	schema:value "Level 2" .
+
+inst:level_1xS3BCk291UvhgP2dvNsgp
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNsgp .
+inst:identityDataName_1xS3BCk291UvhgP2dvNsgp
+	opm:hasPropertyState inst:state_identityDataName_879921b8-8079-4767-a97e-01dfd4141e15 .
+inst:state_identityDataName_879921b8-8079-4767-a97e-01dfd4141e15
+	a opm:CurrentPropertyState ;
+	schema:value "T/FDN" .
+
+inst:level_1xS3BCk291UvhgP2dvNtSE
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNtSE .
+inst:identityDataName_1xS3BCk291UvhgP2dvNtSE
+	opm:hasPropertyState inst:state_identityDataName_2a31ca19-7626-45f2-8a2b-3fb9346ff0bb .
+inst:state_identityDataName_2a31ca19-7626-45f2-8a2b-3fb9346ff0bb
+	a opm:CurrentPropertyState ;
+	schema:value "Roof" .
+
+
+### SPACES ###
+inst:room_1xS3BCk291UvhgP2dvNvkw
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkw .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkw
+	opm:hasPropertyState inst:state_identityDataNumber_9b964c06-cf91-443d-93a8-443d302b8693 .
+inst:state_identityDataNumber_9b964c06-cf91-443d-93a8-443d302b8693
+	a opm:CurrentPropertyState ;
+	schema:value "A102" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkw
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvkw .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvkw
+	opm:hasPropertyState inst:state_identityDataName_3745b9cb-1301-4eff-be2b-858f468fd2f0 .
+inst:state_identityDataName_3745b9cb-1301-4eff-be2b-858f468fd2f0
+	a opm:CurrentPropertyState ;
+	schema:value "Living Room A102" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkw
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkw .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkw
+	opm:hasPropertyState inst:state_dimensionsArea_c4d66679-154b-46ac-b22a-68069fcda97c .
+inst:state_dimensionsArea_c4d66679-154b-46ac-b22a-68069fcda97c
+	a opm:CurrentPropertyState ;
+	schema:value "30.14 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNvkw
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkw .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkw
+	opm:hasPropertyState inst:state_dimensionsVolume_3a5c552c-9d70-4708-82bc-60ee459b01f1 .
+inst:state_dimensionsVolume_3a5c552c-9d70-4708-82bc-60ee459b01f1
+	a opm:CurrentPropertyState ;
+	schema:value "71.39 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNvk7
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNvk7 .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNvk7
+	opm:hasPropertyState inst:state_identityDataNumber_cb737afc-eadf-4bde-84ce-91c410b26295 .
+inst:state_identityDataNumber_cb737afc-eadf-4bde-84ce-91c410b26295
+	a opm:CurrentPropertyState ;
+	schema:value "A103" .
+
+inst:room_1xS3BCk291UvhgP2dvNvk7
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvk7 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvk7
+	opm:hasPropertyState inst:state_identityDataName_c02d4785-26ff-4cfc-9d0d-fde85ea5fccf .
+inst:state_identityDataName_c02d4785-26ff-4cfc-9d0d-fde85ea5fccf
+	a opm:CurrentPropertyState ;
+	schema:value "Kitchen A103" .
+
+inst:room_1xS3BCk291UvhgP2dvNvk7
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNvk7 .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNvk7
+	opm:hasPropertyState inst:state_dimensionsArea_1cbe86d5-a2f5-4588-9078-e838e9f40b0f .
+inst:state_dimensionsArea_1cbe86d5-a2f5-4588-9078-e838e9f40b0f
+	a opm:CurrentPropertyState ;
+	schema:value "13.9 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNvk7
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvk7 .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvk7
+	opm:hasPropertyState inst:state_dimensionsVolume_1f6e78fe-87bf-4e29-9337-a817a467139b .
+inst:state_dimensionsVolume_1f6e78fe-87bf-4e29-9337-a817a467139b
+	a opm:CurrentPropertyState ;
+	schema:value "33.51 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNvk0
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNvk0 .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNvk0
+	opm:hasPropertyState inst:state_identityDataNumber_e0c9b24e-c2df-4d90-8b5e-61e87c6fb79f .
+inst:state_identityDataNumber_e0c9b24e-c2df-4d90-8b5e-61e87c6fb79f
+	a opm:CurrentPropertyState ;
+	schema:value "A104" .
+
+inst:room_1xS3BCk291UvhgP2dvNvk0
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvk0 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvk0
+	opm:hasPropertyState inst:state_identityDataName_fa345821-f550-4ae3-a0f9-c98bcac96096 .
+inst:state_identityDataName_fa345821-f550-4ae3-a0f9-c98bcac96096
+	a opm:CurrentPropertyState ;
+	schema:value "Bathroom 1 A104" .
+
+inst:room_1xS3BCk291UvhgP2dvNvk0
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNvk0 .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNvk0
+	opm:hasPropertyState inst:state_dimensionsArea_cd0fe1cd-4320-405a-838c-fbf66c07d537 .
+inst:state_dimensionsArea_cd0fe1cd-4320-405a-838c-fbf66c07d537
+	a opm:CurrentPropertyState ;
+	schema:value "4 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNvk0
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvk0 .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvk0
+	opm:hasPropertyState inst:state_dimensionsVolume_a6724732-735a-47f6-a5fd-15229fe94fdc .
+inst:state_dimensionsVolume_a6724732-735a-47f6-a5fd-15229fe94fdc
+	a opm:CurrentPropertyState ;
+	schema:value "8.18 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNvkD
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkD .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkD
+	opm:hasPropertyState inst:state_identityDataNumber_070e1654-daa2-4397-988f-1dffdcf24752 .
+inst:state_identityDataNumber_070e1654-daa2-4397-988f-1dffdcf24752
+	a opm:CurrentPropertyState ;
+	schema:value "A101" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkD
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvkD .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvkD
+	opm:hasPropertyState inst:state_identityDataName_bdaf64f0-6278-4e78-9c62-1ebaf26347e8 .
+inst:state_identityDataName_bdaf64f0-6278-4e78-9c62-1ebaf26347e8
+	a opm:CurrentPropertyState ;
+	schema:value "Foyer A101" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkD
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkD .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkD
+	opm:hasPropertyState inst:state_dimensionsArea_e157b991-5edd-4160-b7db-c732292fa6a0 .
+inst:state_dimensionsArea_e157b991-5edd-4160-b7db-c732292fa6a0
+	a opm:CurrentPropertyState ;
+	schema:value "17.94 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNvkD
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkD .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkD
+	opm:hasPropertyState inst:state_dimensionsVolume_cffcaba8-61a3-427b-96a7-76f965388fe1 .
+inst:state_dimensionsVolume_cffcaba8-61a3-427b-96a7-76f965388fe1
+	a opm:CurrentPropertyState ;
+	schema:value "40.24 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNvkK
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkK .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkK
+	opm:hasPropertyState inst:state_identityDataNumber_4310980f-94d3-4317-bf62-eb435d3e6754 .
+inst:state_identityDataNumber_4310980f-94d3-4317-bf62-eb435d3e6754
+	a opm:CurrentPropertyState ;
+	schema:value "A201" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkK
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvkK .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvkK
+	opm:hasPropertyState inst:state_identityDataName_f3e9333b-ec28-4bbc-9b5c-28bac2827aaa .
+inst:state_identityDataName_f3e9333b-ec28-4bbc-9b5c-28bac2827aaa
+	a opm:CurrentPropertyState ;
+	schema:value "Hallway A201" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkK
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkK .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkK
+	opm:hasPropertyState inst:state_dimensionsArea_417aa1ff-ebaf-4a4a-9b61-040cb8122a4b .
+inst:state_dimensionsArea_417aa1ff-ebaf-4a4a-9b61-040cb8122a4b
+	a opm:CurrentPropertyState ;
+	schema:value "7.8 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNvkK
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkK .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkK
+	opm:hasPropertyState inst:state_dimensionsVolume_5ea9bb37-495a-4ce5-a651-3caeae00ac39 .
+inst:state_dimensionsVolume_5ea9bb37-495a-4ce5-a651-3caeae00ac39
+	a opm:CurrentPropertyState ;
+	schema:value "18.12 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNvkG
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkG .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkG
+	opm:hasPropertyState inst:state_identityDataNumber_a52c8094-7421-4104-b7c7-3fe339642c91 .
+inst:state_identityDataNumber_a52c8094-7421-4104-b7c7-3fe339642c91
+	a opm:CurrentPropertyState ;
+	schema:value "A204" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkG
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvkG .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvkG
+	opm:hasPropertyState inst:state_identityDataName_72e0bdaf-ca98-4694-87d5-f4467024f618 .
+inst:state_identityDataName_72e0bdaf-ca98-4694-87d5-f4467024f618
+	a opm:CurrentPropertyState ;
+	schema:value "Bathroom 2 A204" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkG
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkG .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkG
+	opm:hasPropertyState inst:state_dimensionsArea_533bbad5-e65e-42ef-a398-04be380ad8a7 .
+inst:state_dimensionsArea_533bbad5-e65e-42ef-a398-04be380ad8a7
+	a opm:CurrentPropertyState ;
+	schema:value "5.42 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNvkG
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkG .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkG
+	opm:hasPropertyState inst:state_dimensionsVolume_17f3ca75-b378-4bfd-8035-9264f644cf91 .
+inst:state_dimensionsVolume_17f3ca75-b378-4bfd-8035-9264f644cf91
+	a opm:CurrentPropertyState ;
+	schema:value "12.24 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNvkT
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkT .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkT
+	opm:hasPropertyState inst:state_identityDataNumber_2cea1685-e693-4a64-b75e-09b966667fc0 .
+inst:state_identityDataNumber_2cea1685-e693-4a64-b75e-09b966667fc0
+	a opm:CurrentPropertyState ;
+	schema:value "A203" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkT
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvkT .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvkT
+	opm:hasPropertyState inst:state_identityDataName_a62293d5-e5ab-45b5-a955-ead130ea045a .
+inst:state_identityDataName_a62293d5-e5ab-45b5-a955-ead130ea045a
+	a opm:CurrentPropertyState ;
+	schema:value "Bedroom 2 A203" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkT
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkT .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkT
+	opm:hasPropertyState inst:state_dimensionsArea_a0c5a039-e4a0-4e6e-8728-65aa286aae19 .
+inst:state_dimensionsArea_a0c5a039-e4a0-4e6e-8728-65aa286aae19
+	a opm:CurrentPropertyState ;
+	schema:value "26.18 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNvkT
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkT .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkT
+	opm:hasPropertyState inst:state_dimensionsVolume_edd25781-3e42-433b-892b-bcb3a86de022 .
+inst:state_dimensionsVolume_edd25781-3e42-433b-892b-bcb3a86de022
+	a opm:CurrentPropertyState ;
+	schema:value "56.89 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNvkU
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkU .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNvkU
+	opm:hasPropertyState inst:state_identityDataNumber_9a169509-f60b-4f07-9ed1-067eeaf038fd .
+inst:state_identityDataNumber_9a169509-f60b-4f07-9ed1-067eeaf038fd
+	a opm:CurrentPropertyState ;
+	schema:value "A202" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkU
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNvkU .
+inst:identityDataName_1xS3BCk291UvhgP2dvNvkU
+	opm:hasPropertyState inst:state_identityDataName_23b67fa4-8d38-4ab7-859f-5f8522f3a1bb .
+inst:state_identityDataName_23b67fa4-8d38-4ab7-859f-5f8522f3a1bb
+	a opm:CurrentPropertyState ;
+	schema:value "Bedroom 1 A202" .
+
+inst:room_1xS3BCk291UvhgP2dvNvkU
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkU .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNvkU
+	opm:hasPropertyState inst:state_dimensionsArea_192f5bb2-7f35-482e-bbd2-462e0562a41c .
+inst:state_dimensionsArea_192f5bb2-7f35-482e-bbd2-462e0562a41c
+	a opm:CurrentPropertyState ;
+	schema:value "26.12 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNvkU
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkU .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNvkU
+	opm:hasPropertyState inst:state_dimensionsVolume_dda559fb-10e7-4098-9fa8-86ad921b181a .
+inst:state_dimensionsVolume_dda559fb-10e7-4098-9fa8-86ad921b181a
+	a opm:CurrentPropertyState ;
+	schema:value "56.89 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNcNR
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNcNR .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNcNR
+	opm:hasPropertyState inst:state_identityDataNumber_0abaccac-e573-4f16-8036-cbdb25335764 .
+inst:state_identityDataNumber_0abaccac-e573-4f16-8036-cbdb25335764
+	a opm:CurrentPropertyState ;
+	schema:value "B102" .
+
+inst:room_1xS3BCk291UvhgP2dvNcNR
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNcNR .
+inst:identityDataName_1xS3BCk291UvhgP2dvNcNR
+	opm:hasPropertyState inst:state_identityDataName_f41c8ac2-f902-485a-a915-bef10e09a58d .
+inst:state_identityDataName_f41c8ac2-f902-485a-a915-bef10e09a58d
+	a opm:CurrentPropertyState ;
+	schema:value "Living Room B102" .
+
+inst:room_1xS3BCk291UvhgP2dvNcNR
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNcNR .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNcNR
+	opm:hasPropertyState inst:state_dimensionsArea_03e27d9e-3220-4243-a429-f4492911dca6 .
+inst:state_dimensionsArea_03e27d9e-3220-4243-a429-f4492911dca6
+	a opm:CurrentPropertyState ;
+	schema:value "30.14 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNcNR
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcNR .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcNR
+	opm:hasPropertyState inst:state_dimensionsVolume_15c955ab-bee6-4dd0-8894-d0b33cd314fe .
+inst:state_dimensionsVolume_15c955ab-bee6-4dd0-8894-d0b33cd314fe
+	a opm:CurrentPropertyState ;
+	schema:value "71.39 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNcOa
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOa .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOa
+	opm:hasPropertyState inst:state_identityDataNumber_8dacaf14-0544-48a4-8ed1-c0b01a6c8e70 .
+inst:state_identityDataNumber_8dacaf14-0544-48a4-8ed1-c0b01a6c8e70
+	a opm:CurrentPropertyState ;
+	schema:value "B103" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOa
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNcOa .
+inst:identityDataName_1xS3BCk291UvhgP2dvNcOa
+	opm:hasPropertyState inst:state_identityDataName_4fb75e79-74fa-4176-9e94-e473441477e6 .
+inst:state_identityDataName_4fb75e79-74fa-4176-9e94-e473441477e6
+	a opm:CurrentPropertyState ;
+	schema:value "Kitchen B103" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOa
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOa .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOa
+	opm:hasPropertyState inst:state_dimensionsArea_a2f9dcd3-b970-4b03-b326-2b71f0063f9c .
+inst:state_dimensionsArea_a2f9dcd3-b970-4b03-b326-2b71f0063f9c
+	a opm:CurrentPropertyState ;
+	schema:value "13.9 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNcOa
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOa .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOa
+	opm:hasPropertyState inst:state_dimensionsVolume_aa1922dd-1fa5-44d4-b021-c2d1da08c059 .
+inst:state_dimensionsVolume_aa1922dd-1fa5-44d4-b021-c2d1da08c059
+	a opm:CurrentPropertyState ;
+	schema:value "33.51 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNcOX
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOX .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOX
+	opm:hasPropertyState inst:state_identityDataNumber_48176f55-b7ab-4ea0-831f-e1794974839b .
+inst:state_identityDataNumber_48176f55-b7ab-4ea0-831f-e1794974839b
+	a opm:CurrentPropertyState ;
+	schema:value "B104" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOX
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNcOX .
+inst:identityDataName_1xS3BCk291UvhgP2dvNcOX
+	opm:hasPropertyState inst:state_identityDataName_654e0e7b-ae5b-49a7-aae7-f57bdf6c9194 .
+inst:state_identityDataName_654e0e7b-ae5b-49a7-aae7-f57bdf6c9194
+	a opm:CurrentPropertyState ;
+	schema:value "Bathroom 1 B104" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOX
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOX .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOX
+	opm:hasPropertyState inst:state_dimensionsArea_8e31c8cf-c9ca-459a-a991-21e04054e1c0 .
+inst:state_dimensionsArea_8e31c8cf-c9ca-459a-a991-21e04054e1c0
+	a opm:CurrentPropertyState ;
+	schema:value "4 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNcOX
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOX .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOX
+	opm:hasPropertyState inst:state_dimensionsVolume_a29dd089-db4d-4ded-a089-822377f383d3 .
+inst:state_dimensionsVolume_a29dd089-db4d-4ded-a089-822377f383d3
+	a opm:CurrentPropertyState ;
+	schema:value "8.18 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNcOY
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOY .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOY
+	opm:hasPropertyState inst:state_identityDataNumber_06332d06-353d-421a-96a7-6dd198a9fdab .
+inst:state_identityDataNumber_06332d06-353d-421a-96a7-6dd198a9fdab
+	a opm:CurrentPropertyState ;
+	schema:value "B101" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOY
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNcOY .
+inst:identityDataName_1xS3BCk291UvhgP2dvNcOY
+	opm:hasPropertyState inst:state_identityDataName_33d84a61-1c3c-4a2c-9a3c-32371b685256 .
+inst:state_identityDataName_33d84a61-1c3c-4a2c-9a3c-32371b685256
+	a opm:CurrentPropertyState ;
+	schema:value "Foyer B101" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOY
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOY .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOY
+	opm:hasPropertyState inst:state_dimensionsArea_8d0869ef-d77f-40e3-8e86-15159b9f0953 .
+inst:state_dimensionsArea_8d0869ef-d77f-40e3-8e86-15159b9f0953
+	a opm:CurrentPropertyState ;
+	schema:value "17.94 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNcOY
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOY .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOY
+	opm:hasPropertyState inst:state_dimensionsVolume_b0f1a5a3-0b1a-4c78-9e11-4af705ac164a .
+inst:state_dimensionsVolume_b0f1a5a3-0b1a-4c78-9e11-4af705ac164a
+	a opm:CurrentPropertyState ;
+	schema:value "40.24 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNcOe
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOe .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOe
+	opm:hasPropertyState inst:state_identityDataNumber_b4fe3c80-1fa6-4690-b8e0-67ffdb2a5a5c .
+inst:state_identityDataNumber_b4fe3c80-1fa6-4690-b8e0-67ffdb2a5a5c
+	a opm:CurrentPropertyState ;
+	schema:value "B201" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOe
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNcOe .
+inst:identityDataName_1xS3BCk291UvhgP2dvNcOe
+	opm:hasPropertyState inst:state_identityDataName_a764411f-019d-46c5-9acc-b404a04e8556 .
+inst:state_identityDataName_a764411f-019d-46c5-9acc-b404a04e8556
+	a opm:CurrentPropertyState ;
+	schema:value "Hallway B201" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOe
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOe .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOe
+	opm:hasPropertyState inst:state_dimensionsArea_2ce65f77-962a-485e-923f-8b2f2f45c0e0 .
+inst:state_dimensionsArea_2ce65f77-962a-485e-923f-8b2f2f45c0e0
+	a opm:CurrentPropertyState ;
+	schema:value "7.8 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNcOe
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOe .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOe
+	opm:hasPropertyState inst:state_dimensionsVolume_d627d217-0d34-44cd-83d7-f36b95b92bf0 .
+inst:state_dimensionsVolume_d627d217-0d34-44cd-83d7-f36b95b92bf0
+	a opm:CurrentPropertyState ;
+	schema:value "18.12 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNcOq
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOq .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOq
+	opm:hasPropertyState inst:state_identityDataNumber_ae1e0fad-00bf-4e09-9a63-382777d2315b .
+inst:state_identityDataNumber_ae1e0fad-00bf-4e09-9a63-382777d2315b
+	a opm:CurrentPropertyState ;
+	schema:value "B204" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOq
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNcOq .
+inst:identityDataName_1xS3BCk291UvhgP2dvNcOq
+	opm:hasPropertyState inst:state_identityDataName_16ff1602-a8d7-4319-9d78-67e7a75ffad4 .
+inst:state_identityDataName_16ff1602-a8d7-4319-9d78-67e7a75ffad4
+	a opm:CurrentPropertyState ;
+	schema:value "Bathroom 2 B204" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOq
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOq .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOq
+	opm:hasPropertyState inst:state_dimensionsArea_356d2302-a309-438c-8f2f-055cbbe35de3 .
+inst:state_dimensionsArea_356d2302-a309-438c-8f2f-055cbbe35de3
+	a opm:CurrentPropertyState ;
+	schema:value "5.44 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNcOq
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOq .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOq
+	opm:hasPropertyState inst:state_dimensionsVolume_08aa8c7d-28a0-4215-b3c7-9c926902e0f9 .
+inst:state_dimensionsVolume_08aa8c7d-28a0-4215-b3c7-9c926902e0f9
+	a opm:CurrentPropertyState ;
+	schema:value "12.3 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNcOn
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOn .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOn
+	opm:hasPropertyState inst:state_identityDataNumber_16907a16-b39c-4f53-ab20-3594707e6a39 .
+inst:state_identityDataNumber_16907a16-b39c-4f53-ab20-3594707e6a39
+	a opm:CurrentPropertyState ;
+	schema:value "B203" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOn
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNcOn .
+inst:identityDataName_1xS3BCk291UvhgP2dvNcOn
+	opm:hasPropertyState inst:state_identityDataName_ecaabcef-1bdd-4879-9c9b-582f0ca6e3b1 .
+inst:state_identityDataName_ecaabcef-1bdd-4879-9c9b-582f0ca6e3b1
+	a opm:CurrentPropertyState ;
+	schema:value "Bedroom 2 B203" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOn
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOn .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOn
+	opm:hasPropertyState inst:state_dimensionsArea_2cbacc0c-5940-4f50-9ff1-39c03022189c .
+inst:state_dimensionsArea_2cbacc0c-5940-4f50-9ff1-39c03022189c
+	a opm:CurrentPropertyState ;
+	schema:value "26.18 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNcOn
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOn .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOn
+	opm:hasPropertyState inst:state_dimensionsVolume_5b3538c3-5098-45a1-9ee3-7aa3a1757a47 .
+inst:state_dimensionsVolume_5b3538c3-5098-45a1-9ee3-7aa3a1757a47
+	a opm:CurrentPropertyState ;
+	schema:value "56.89 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNcOo
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOo .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNcOo
+	opm:hasPropertyState inst:state_identityDataNumber_44cfa5b0-6af1-4117-aca2-f27982a21575 .
+inst:state_identityDataNumber_44cfa5b0-6af1-4117-aca2-f27982a21575
+	a opm:CurrentPropertyState ;
+	schema:value "B202" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOo
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNcOo .
+inst:identityDataName_1xS3BCk291UvhgP2dvNcOo
+	opm:hasPropertyState inst:state_identityDataName_1ce81fd8-a8c3-4152-81ea-550a243382a3 .
+inst:state_identityDataName_1ce81fd8-a8c3-4152-81ea-550a243382a3
+	a opm:CurrentPropertyState ;
+	schema:value "Bedroom 1 B202" .
+
+inst:room_1xS3BCk291UvhgP2dvNcOo
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOo .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNcOo
+	opm:hasPropertyState inst:state_dimensionsArea_5e9d70ab-8526-4a5a-9aba-6bec76d1972f .
+inst:state_dimensionsArea_5e9d70ab-8526-4a5a-9aba-6bec76d1972f
+	a opm:CurrentPropertyState ;
+	schema:value "26.12 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNcOo
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOo .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNcOo
+	opm:hasPropertyState inst:state_dimensionsVolume_8f491e01-a799-4e7e-8ccb-59cde6fece5a .
+inst:state_dimensionsVolume_8f491e01-a799-4e7e-8ccb-59cde6fece5a
+	a opm:CurrentPropertyState ;
+	schema:value "56.89 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNdjF
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNdjF .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNdjF
+	opm:hasPropertyState inst:state_identityDataNumber_826aaca1-ee52-43a2-907b-4ab5f81f9dcf .
+inst:state_identityDataNumber_826aaca1-ee52-43a2-907b-4ab5f81f9dcf
+	a opm:CurrentPropertyState ;
+	schema:value "A205" .
+
+inst:room_1xS3BCk291UvhgP2dvNdjF
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNdjF .
+inst:identityDataName_1xS3BCk291UvhgP2dvNdjF
+	opm:hasPropertyState inst:state_identityDataName_59cb208b-585a-4dd2-8f07-2b9feef77bf4 .
+inst:state_identityDataName_59cb208b-585a-4dd2-8f07-2b9feef77bf4
+	a opm:CurrentPropertyState ;
+	schema:value "Utility A205" .
+
+inst:room_1xS3BCk291UvhgP2dvNdjF
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNdjF .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNdjF
+	opm:hasPropertyState inst:state_dimensionsArea_0eaa7db5-a6b8-455f-9a79-a765c9ddfef5 .
+inst:state_dimensionsArea_0eaa7db5-a6b8-455f-9a79-a765c9ddfef5
+	a opm:CurrentPropertyState ;
+	schema:value "1.75 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNdjF
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNdjF .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNdjF
+	opm:hasPropertyState inst:state_dimensionsVolume_80574ab9-aa6b-401f-94be-36d47aca85ca .
+inst:state_dimensionsVolume_80574ab9-aa6b-401f-94be-36d47aca85ca
+	a opm:CurrentPropertyState ;
+	schema:value "3.67 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNdjS
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNdjS .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNdjS
+	opm:hasPropertyState inst:state_identityDataNumber_c133ae9b-10cd-47b5-a517-a8b6b926fa73 .
+inst:state_identityDataNumber_c133ae9b-10cd-47b5-a517-a8b6b926fa73
+	a opm:CurrentPropertyState ;
+	schema:value "B205" .
+
+inst:room_1xS3BCk291UvhgP2dvNdjS
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNdjS .
+inst:identityDataName_1xS3BCk291UvhgP2dvNdjS
+	opm:hasPropertyState inst:state_identityDataName_fadb25c0-30fd-411b-b7cb-85c1c74fa5fd .
+inst:state_identityDataName_fadb25c0-30fd-411b-b7cb-85c1c74fa5fd
+	a opm:CurrentPropertyState ;
+	schema:value "Utility B205" .
+
+inst:room_1xS3BCk291UvhgP2dvNdjS
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNdjS .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNdjS
+	opm:hasPropertyState inst:state_dimensionsArea_7cf65754-c5d2-4a3a-b389-6719888d5b67 .
+inst:state_dimensionsArea_7cf65754-c5d2-4a3a-b389-6719888d5b67
+	a opm:CurrentPropertyState ;
+	schema:value "1.73 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNdjS
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNdjS .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNdjS
+	opm:hasPropertyState inst:state_dimensionsVolume_30b042c1-e4d4-4671-88c5-3bb3175aeaf2 .
+inst:state_dimensionsVolume_30b042c1-e4d4-4671-88c5-3bb3175aeaf2
+	a opm:CurrentPropertyState ;
+	schema:value "3.61 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNb9h
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNb9h .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNb9h
+	opm:hasPropertyState inst:state_identityDataNumber_d525efbe-dfce-41e4-9602-a60b08881ed6 .
+inst:state_identityDataNumber_d525efbe-dfce-41e4-9602-a60b08881ed6
+	a opm:CurrentPropertyState ;
+	schema:value "A105" .
+
+inst:room_1xS3BCk291UvhgP2dvNb9h
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNb9h .
+inst:identityDataName_1xS3BCk291UvhgP2dvNb9h
+	opm:hasPropertyState inst:state_identityDataName_bef0ae2c-5952-4b6d-b9aa-e7c69e498daf .
+inst:state_identityDataName_bef0ae2c-5952-4b6d-b9aa-e7c69e498daf
+	a opm:CurrentPropertyState ;
+	schema:value "Stair A105" .
+
+inst:room_1xS3BCk291UvhgP2dvNb9h
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNb9h .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNb9h
+	opm:hasPropertyState inst:state_dimensionsArea_e69ceb9f-ea5d-4cb9-b69e-5cddd92553e6 .
+inst:state_dimensionsArea_e69ceb9f-ea5d-4cb9-b69e-5cddd92553e6
+	a opm:CurrentPropertyState ;
+	schema:value "4.92 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNb9h
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNb9h .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNb9h
+	opm:hasPropertyState inst:state_dimensionsVolume_90211081-c928-43ed-ad1b-82511f845ce5 .
+inst:state_dimensionsVolume_90211081-c928-43ed-ad1b-82511f845ce5
+	a opm:CurrentPropertyState ;
+	schema:value "20.8 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNbEa
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNbEa .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNbEa
+	opm:hasPropertyState inst:state_identityDataNumber_bd120415-186a-478b-a797-8aa1148fca21 .
+inst:state_identityDataNumber_bd120415-186a-478b-a797-8aa1148fca21
+	a opm:CurrentPropertyState ;
+	schema:value "B105" .
+
+inst:room_1xS3BCk291UvhgP2dvNbEa
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNbEa .
+inst:identityDataName_1xS3BCk291UvhgP2dvNbEa
+	opm:hasPropertyState inst:state_identityDataName_66a54fde-b64f-4065-88ce-bf7d077042ea .
+inst:state_identityDataName_66a54fde-b64f-4065-88ce-bf7d077042ea
+	a opm:CurrentPropertyState ;
+	schema:value "Room B105" .
+
+inst:room_1xS3BCk291UvhgP2dvNbEa
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNbEa .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNbEa
+	opm:hasPropertyState inst:state_dimensionsArea_90fcde81-8c8a-41c9-86f3-5b60cbd9c54d .
+inst:state_dimensionsArea_90fcde81-8c8a-41c9-86f3-5b60cbd9c54d
+	a opm:CurrentPropertyState ;
+	schema:value "4.92 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNbEa
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNbEa .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNbEa
+	opm:hasPropertyState inst:state_dimensionsVolume_2fd6d4e6-c053-43f9-b4d0-c509a48def7a .
+inst:state_dimensionsVolume_2fd6d4e6-c053-43f9-b4d0-c509a48def7a
+	a opm:CurrentPropertyState ;
+	schema:value "20.8 m3"^^cdt:volume .
+
+inst:room_1xS3BCk291UvhgP2dvNbq0
+	props:identityDataNumber inst:identityDataNumber_1xS3BCk291UvhgP2dvNbq0 .
+inst:identityDataNumber_1xS3BCk291UvhgP2dvNbq0
+	opm:hasPropertyState inst:state_identityDataNumber_9c9ff426-2b0d-4599-8553-5cce493826cb .
+inst:state_identityDataNumber_9c9ff426-2b0d-4599-8553-5cce493826cb
+	a opm:CurrentPropertyState ;
+	schema:value "R301" .
+
+inst:room_1xS3BCk291UvhgP2dvNbq0
+	props:identityDataName inst:identityDataName_1xS3BCk291UvhgP2dvNbq0 .
+inst:identityDataName_1xS3BCk291UvhgP2dvNbq0
+	opm:hasPropertyState inst:state_identityDataName_b19f14a6-7036-417e-b4af-8200f0c64485 .
+inst:state_identityDataName_b19f14a6-7036-417e-b4af-8200f0c64485
+	a opm:CurrentPropertyState ;
+	schema:value "Roof R301" .
+
+inst:room_1xS3BCk291UvhgP2dvNbq0
+	props:dimensionsArea inst:dimensionsArea_1xS3BCk291UvhgP2dvNbq0 .
+inst:dimensionsArea_1xS3BCk291UvhgP2dvNbq0
+	opm:hasPropertyState inst:state_dimensionsArea_b0ed0cdb-41e0-4530-a2e9-1d1f0b0eaf04 .
+inst:state_dimensionsArea_b0ed0cdb-41e0-4530-a2e9-1d1f0b0eaf04
+	a opm:CurrentPropertyState ;
+	schema:value "145.72 m2"^^cdt:area .
+
+inst:room_1xS3BCk291UvhgP2dvNbq0
+	props:dimensionsVolume inst:dimensionsVolume_1xS3BCk291UvhgP2dvNbq0 .
+inst:dimensionsVolume_1xS3BCk291UvhgP2dvNbq0
+	opm:hasPropertyState inst:state_dimensionsVolume_7fad44ef-4073-4aaf-a928-d5649ff2e6a3 .
+inst:state_dimensionsVolume_7fad44ef-4073-4aaf-a928-d5649ff2e6a3
+	a opm:CurrentPropertyState ;
+	schema:value "405.45 m3"^^cdt:volume .

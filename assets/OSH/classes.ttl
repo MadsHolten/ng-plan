@@ -1,0 +1,101 @@
+@prefix props:	<https://w3id.org/props#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bot:	<https://w3id.org/bot#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:		<https://example.org/> .
+@prefix inst:	<https://w3id.org/ibp/bot4osh/> .
+
+# WALLTYPES
+inst:Curtain_Wall
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Curtain Wall" .
+inst:Interior_-_138mm_Partition_1-hr
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Interior - 138mm Partition (1-hr)" .
+inst:Exterior_-_Brick_on_Mtl._Stud
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Exterior - Brick on Mtl. Stud" .
+inst:Generic_-_200mm
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 200mm" .
+inst:Generic_-_225mm_Masonry
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 225mm Masonry" .
+inst:Generic_-_140mm_Masonry
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 140mm Masonry" .
+inst:Generic_-_90mm_Brick
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 90mm Brick" .
+inst:Interior_-_79mm_Partition_1-hr
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Interior - 79mm Partition (1-hr)" .
+inst:Interior_-_Blockwork_100
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Interior - Blockwork 100" .
+inst:Interior_-_135mm_Partition_2-hr
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Interior - 135mm Partition (2-hr)" .
+inst:CW_102-50-100p
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "CW 102-50-100p" .
+inst:CW_102-85-140p
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "CW 102-85-140p" .
+inst:CW_102-50-140p
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "CW 102-50-140p" .
+inst:CW_102-50-215p
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "CW 102-50-215p" .
+inst:CW_102-85-215p
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "CW 102-85-215p" .
+inst:CW_102-85-100p
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "CW 102-85-100p" .
+inst:Interior_-_Blockwork_140
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Interior - Blockwork 140" .
+inst:Interior_-_Blockwork_190
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Interior - Blockwork 190" .
+inst:Generic_-_300mm
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 300mm" .
+inst:Foundation_-_300mm_Concrete
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Foundation - 300mm Concrete" .
+inst:Retaining_-_300mm_Concrete
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Retaining - 300mm Concrete" .
+inst:Generic_-_200mm_-_Filled
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 200mm - Filled" .
+inst:Exterior_-_Render_on_Brick_on_Block
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Exterior - Render on Brick on Block" .
+inst:Exterior_Glazing
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Exterior Glazing" .
+inst:Storefront
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Storefront" .
+inst:Exterior_-_Brick_Over_Block_w_Metal_Stud
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Exterior - Brick Over Block w Metal Stud" .
+inst:Exterior_-_Block_on_Mtl._Stud
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Exterior - Block on Mtl. Stud" .
+inst:Generic_-_260mm
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 260mm" .
+inst:Generic_-_160mm
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 160mm" .
+inst:Generic_-_100mm
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 100mm" .
+inst:Generic_-_60mm
+	rdfs:subClassOf bot:Element ;
+	rdfs:label "Generic - 60mm" .

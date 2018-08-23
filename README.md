@@ -1,4 +1,4 @@
-[demo](https://madsholten.github.io/ng-plan/)
+[demo](https://madsholten.github.io/ng-plan/index.html)
 
 ### Ng-Plan
 

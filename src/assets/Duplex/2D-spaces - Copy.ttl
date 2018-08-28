@@ -1,0 +1,24 @@
+@prefix props:	<https://w3id.org/props#> .
+@prefix geo:	<http://www.opengis.net/ont/geosparql#> .
+
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNvkw> props:spaceBoundary "POLYGON((0.2085 -17.5915, 6.262 -17.5915, 6.262 -13.8, 6.2 -13.8, 6.2 -12.6, 6.0882304 -12.6, 0.2085 -12.6, 0.2085 -17.5915))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNvk7> props:spaceBoundary "POLYGON((0.2085 -10.294, 0.2085 -12.6, 6.226 -12.6, 6.226 -10.995, 6.288 -10.995, 6.288 -10.308, 4.694 -10.308, 4.694 -10.294, 0.2085 -10.294))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNvk0> props:spaceBoundary "POLYGON((6.288 -7.8, 4.694 -7.8, 4.694 -10.294, 4.694 -10.308, 6.288 -10.308, 6.288 -7.8))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNvkD> props:spaceBoundary "POLYGON((8.5915 -17.5915, 8.5915 -11.825, 7.3686 -11.825, 7.3686 -7.8, 6.288 -7.8, 6.288 -10.308, 6.288 -10.995, 6.226 -10.995, 6.226 -12.4622304, 6.226 -12.6, 6.2 -12.6, 6.2 -13.8, 6.262 -13.8, 6.262 -17.5915, 8.5915 -17.5915))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNvkK> props:spaceBoundary "POLYGON((8.5915 -8.075, 8.5915 -6.188, 6.356 -6.188, 6.356 -6.728, 6.356 -7.78338423507, 6.356 -11.042, 6.356 -11.612, 7.3686 -11.612, 7.3686 -8.075, 8.5915 -8.075))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNvkG> props:spaceBoundary "POLYGON((6.356 -11.042, 6.356 -7.78338423507, 4.694 -7.78338423507, 4.694 -11.042, 6.356 -11.042))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNvkT> props:spaceBoundary "POLYGON((4.4 -11.042, 4.4 -11.072, 4.4 -17.5915, 8.5915 -17.5915, 8.5915 -11.612, 7.3686 -11.612, 6.356 -11.612, 6.356 -11.042, 4.694 -11.042, 4.4 -11.042))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNvkU> props:spaceBoundary "POLYGON((4.4 -0.2085, 4.4 -6.728, 4.694 -6.728, 6.356 -6.728, 6.356 -6.188, 8.5915 -6.188, 8.5915 -0.2085, 4.4 -0.2085))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNcNR> props:spaceBoundary "POLYGON((8.5915 -0.2085, 2.538 -0.2085, 2.538 -4.0, 2.6 -4.0, 2.6 -5.2, 2.7117696 -5.2, 8.5915 -5.2, 8.5915 -0.2085))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNcOa> props:spaceBoundary "POLYGON((8.5915 -7.506, 8.5915 -5.2, 2.574 -5.2, 2.574 -6.805, 2.512 -6.805, 2.512 -7.492, 4.106 -7.492, 4.106 -7.506, 8.5915 -7.506))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNcOX> props:spaceBoundary "POLYGON((2.512 -7.492, 2.512 -10.0, 4.106 -10.0, 4.106 -7.506, 4.106 -7.492, 2.512 -7.492))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNcOY> props:spaceBoundary "POLYGON((2.538 -0.2085, 0.2085 -0.2085, 0.2085 -5.975, 1.4314 -5.975, 1.4314 -10.0, 2.512 -10.0, 2.512 -7.492, 2.512 -6.805, 2.574 -6.805, 2.574 -5.3377696, 2.574 -5.2, 2.6 -5.2, 2.6 -4.0, 2.538 -4.0, 2.538 -0.2085))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNcOe> props:spaceBoundary "POLYGON((0.2085 -9.725, 0.2085 -11.612, 2.444 -11.612, 2.444 -11.072, 2.444 -10.0320511785, 2.444 -6.758, 2.444 -6.188, 1.4314 -6.188, 1.4314 -9.725, 0.2085 -9.725))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNcOq> props:spaceBoundary "POLYGON((2.444 -6.758, 2.444 -10.0320511785, 4.106 -10.0320511785, 4.106 -6.758, 2.444 -6.758))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNcOn> props:spaceBoundary "POLYGON((4.4 -6.728, 4.4 -0.2085, 0.2085 -0.2085, 0.2085 -6.188, 1.4314 -6.188, 2.444 -6.188, 2.444 -6.758, 4.106 -6.758, 4.4 -6.758, 4.4 -6.728))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNcOo> props:spaceBoundary "POLYGON((4.4 -17.5915, 4.4 -11.072, 4.106 -11.072, 2.444 -11.072, 2.444 -11.612, 0.2085 -11.612, 0.2085 -17.5915, 4.4 -17.5915))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNdjF> props:spaceBoundary "POLYGON((6.356 -7.78338423507, 6.356 -6.728, 4.694 -6.728, 4.694 -7.78338423507, 6.356 -7.78338423507))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNdjS> props:spaceBoundary "POLYGON((2.444 -10.0320511785, 2.444 -11.072, 4.106 -11.072, 4.106 -10.0320511785, 2.444 -10.0320511785))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNb9h> props:spaceBoundary "POLYGON((8.5915 -11.825, 8.5915 -7.8, 7.3686 -7.8, 7.3686 -11.825, 8.5915 -11.825))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNbEa> props:spaceBoundary "POLYGON((0.2085 -5.975, 0.2085 -10.0, 1.4314 -10.0, 1.4314 -5.975, 0.2085 -5.975))"^^geo:wktLiteral .
+<https://niras.dk/projects/0001/room_1xS3BCk291UvhgP2dvNbq0> props:spaceBoundary "POLYGON((8.5915 -0.2085, 0.2085 -0.2085, 0.2085 -17.5915, 8.5915 -17.5915, 8.5915 -0.2085))"^^geo:wktLiteral .

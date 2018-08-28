@@ -1,0 +1,38 @@
+@prefix bot:	<https://w3id.org/bot#> .
+@prefix inst:	<https://w3id.org/ibp/bot4osh/> .
+@prefix props:	<https://w3id.org/props#> .
+@prefix geo:	<http://www.opengis.net/ont/geosparql#> .
+
+# WALLS
+inst:wall_19j%24H2u695xh74KSpBvgAu props:hasSimple2DBoundary "POLYGON (-7551 5556, -7551 1656, -7551 1396, -7551 -3804, -7551 -4064, -7551 -4064, -7811 5816, -7811 5816)"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvgDk props:hasSimple2DBoundary "POLYGON (3639 5556, -861 5556, -1021 5556, -2621 5556, -2781 5556, -7551 5556, -7551 5556, 3899 5816, 3899 5816)"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvgCy props:hasSimple2DBoundary "POLYGON (3639 -3804, 3639 796, 3639 1056, 3639 5556, 3639 5556, 3899 -4064, 3899 -4064)"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvgFp props:hasSimple2DBoundary "POLYGON (-5041 -3804, -4881 -3804, -3181 -3804, -3021 -3804, -21 -3804, 139 -3804, 3639 -3804, 3639 -3804, -7551 -4064, -7551 -4064)"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvg1x props:hasSimple2DBoundary "POLYGON (-4881 1396, -5041 1396, -7551 1396, -7551 1396, -2781 1656, -2621 1656, -2621 1656)"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvg01 props:hasSimple2DBoundary "POLYGON ((-2621 1656, -2781 1675, -2781 1675, -2621 1656), (-2781 5556, -2621 2556, -2621 2456, -2621 2437, -2621 2437, -2781 5556))"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvg2o props:hasSimple2DBoundary "POLYGON (-1021 2556, -1021 5556, -1021 5556, -861 2456, -861 2456, -921 2456)"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvg53 props:hasSimple2DBoundary "POLYGON ((-2621 2456, -2621 2456, -2601 2556, -2601 2556), (-1839 2456, -1839 2456, -1021 2556, -1021 2556))"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvg4t props:hasSimple2DBoundary "POLYGON ((3639 1056, 3639 1056, 2639 796, 2639 796), (239 1056, 239 1056, -861 796, -861 796))"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvg6N props:hasSimple2DBoundary "POLYGON ((-21 -3304, -21 -3304, 139 -3804, 139 -3804), (-21 -704, -21 -544, -21 -544, 139 -2542, 139 -2542))"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvgP6 props:hasSimple2DBoundary "POLYGON ((-21 -544, -21 -544, -1521 -704, -1521 -704), (-2283 -544, -2283 -544, -3021 -704, -3181 -704, -3481 -704, -3481 -704), (-4243 -544, -4243 -544, -4881 -704, -4881 -704))"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvgOr props:hasSimple2DBoundary "POLYGON ((-4881 1171, -4881 1171, -5041 1396, -5041 1396), (-4881 -544, -4881 -704, -4881 -2444, -4881 -2604, -4881 -3804, -4881 -3804, -5041 256, -5041 256))"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvgQG props:hasSimple2DBoundary "POLYGON (-3021 -3804, -3021 -3804, -3181 -2604, -3181 -2444, -3181 -704, -3181 -704)"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvgHj props:hasSimple2DBoundary "POLYGON (-921 2456, -921 2456, -861 1056, -861 796, -861 796)"^^geo:wktLiteral .
+inst:wall_19j%24H2u695xh74KSpBvffq props:hasSimple2DBoundary "POLYGON ((-3181 -2444, -3181 -2444, -3481 -2604, -3481 -2604), (-4243 -2444, -4243 -2444, -4881 -2604, -4881 -2604))"^^geo:wktLiteral .
+
+# FLOORS
+inst:floor_19j%24H2u695xh74KSpBvgqH props:hasSimple2DBoundary "POLYGON (-7811 -4064, -7811 5816, 3899 5816, 3899 -4064)"^^geo:wktLiteral .
+inst:floor_19j%24H2u695xh74KSpBvg9G props:hasSimple2DBoundary "POLYGON (-7811 -4064, -7811 5816, 3899 5816, 3899 -4064)"^^geo:wktLiteral .
+
+# WINDOWS & DOORS
+
+### SPACES ###
+inst:room_19j%24H2u695xh74KSpBvfeS props:hasSimple2DBoundary "POLYGON (-7551 5556, -2781 5556, -2781 2506, -2781 1656, -4961 1656, -7551 1656)"^^geo:wktLiteral .
+inst:room_19j%24H2u695xh74KSpBvfe1 props:hasSimple2DBoundary "POLYGON (3639 5556, 3639 1056, 139 1056, -783 1056, -861 1056, -861 2506, -861 5556)"^^geo:wktLiteral .
+inst:room_19j%24H2u695xh74KSpBvfe6 props:hasSimple2DBoundary "POLYGON (-1021 5556, -1021 2556, -2621 2556, -2621 5556)"^^geo:wktLiteral .
+inst:room_19j%24H2u695xh74KSpBvfeB props:hasSimple2DBoundary "POLYGON (-7551 1396, -5041 1396, -5041 -624, -5041 -2524, -5041 -3804, -7551 -3804)"^^geo:wktLiteral .
+inst:room_19j%24H2u695xh74KSpBvfeD props:hasSimple2DBoundary "POLYGON (-3021 -3804, -3021 -2524, -3021 -704, -21 -704, -21 -3804)"^^geo:wktLiteral .
+inst:room_19j%24H2u695xh74KSpBvfeo props:hasSimple2DBoundary "POLYGON (-3181 -704, -3181 -2444, -4881 -2444, -4881 -704)"^^geo:wktLiteral .
+inst:room_19j%24H2u695xh74KSpBvfet props:hasSimple2DBoundary "POLYGON (-4881 -3804, -4881 -2604, -3181 -2604, -3181 -3804)"^^geo:wktLiteral .
+inst:room_19j%24H2u695xh74KSpBvfic props:hasSimple2DBoundary "POLYGON (3639 -3804, 139 -3804, 139 -624, 139 -471, 139 796, 3639 796)"^^geo:wktLiteral .
+inst:room_19j%24H2u695xh74KSpBvfkK props:hasSimple2DBoundary "POLYGON (-2621 1396, -2621 2456, -941 2456, -921 2456, -921 926, -921 773, -921 -544, -3101 -544, -4881 -544, -4881 1396)"^^geo:wktLiteral .

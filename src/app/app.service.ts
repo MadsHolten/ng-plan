@@ -4,6 +4,8 @@ import { Observable, from } from "rxjs";
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import * as THREE from 'three';
+import * as parse from 'wellknown';
+import * as _ from 'lodash';
 
 @Injectable()
 export class AppService {
@@ -12,14 +14,22 @@ export class AppService {
     //     "./assets/Duplex/BOT.ttl",
     //     "./assets/Duplex/classes.ttl",
     //     "./assets/Duplex/PROPS.ttl",
-    //     "./assets/Duplex/geometry3d.ttl"
+    //     "./assets/Duplex/geometry3d.ttl",
+    //     "./assets/Duplex/2D-spaces.ttl"
     // ];
     private filePaths = [
         "./assets/OSH/BOT.ttl",
-        "./assets/OSH/geometry3d.ttl",
+        "./assets/OSH/geometry.ttl",
         "./assets/OSH/classes.ttl",
         "./assets/OSH/PROPS.ttl"
     ];
+    // private filePaths = [
+    //     "./assets/OSH-test/OSH.ttl",
+    //     "./assets/OSH-test/OSH_geometry3d.ttl",
+    //     "./assets/OSH-test/OSH_classes.ttl",
+    //     "./assets/OSH-test/OSH_props.ttl"
+    // ];
+
     private store;
 
     constructor( public http: HttpClient ) { }
@@ -58,11 +68,8 @@ export class AppService {
             SELECT ?uri ?name ?geometry
             WHERE {
                 ?uri a bot:Element ;
-                    props:identityDataName/opm:hasPropertyState ?ns ;
                     bot:hasSimple3DModel ?geometry .
-                ?ns a opm:CurrentPropertyState ;
-                    schema:value ?name .
-            } LIMIT 20
+            }
         `;
 
         return from(this._loadAndQuery(q))
@@ -70,9 +77,10 @@ export class AppService {
                     map(data => {
                         return data.map(item => {
                             return {
-                                name: item.name.value, 
+                                name: "none", 
                                 uri: item.uri.value,
-                                geometry: item.geometry.value
+                                geometry: item.geometry.value,
+                                type: "Element"
                             }
                         })
                     })
@@ -102,7 +110,8 @@ export class AppService {
                             return {
                                 name: item.name.value, 
                                 uri: item.uri.value,
-                                geometry: item.geometry.value
+                                geometry: item.geometry.value,
+                                type: "Element"
                             }
                         });
                         return {data: d, query: q};
@@ -134,13 +143,86 @@ export class AppService {
                             return {
                                 name: item.name.value, 
                                 uri: item.uri.value,
-                                geometry: item.geometry.value
+                                geometry: item.geometry.value,
+                                type: "Zone",
+                                opacity: 0.3
                             }
                         });
                         return {data: d, query: q};
                     })
                 );
 
+    }
+
+    public getRooms2D(): Observable<any> {
+        const q = `
+        PREFIX bot:     <https://w3id.org/bot#>
+        PREFIX opm:     <https://w3id.org/opm#>
+        PREFIX schema:  <http://schema.org/>
+        PREFIX props:   <https://w3id.org/props#>
+        PREFIX geo:     <http://www.opengis.net/ont/geosparql#>
+        PREFIX inst:    <https://w3id.org/ibp/bot4osh/>
+        SELECT DISTINCT ?uri ?name ?geometry2d
+        WHERE {
+            inst:level_19j%24H2u695xh74KSpBudja bot:hasSpace ?uri .
+            ?uri props:identityDataName/opm:hasPropertyState ?ns ;
+                props:hasSimple2DBoundary ?geometry2d .
+            ?ns a opm:CurrentPropertyState ;
+                schema:value ?name .
+        }`;
+
+        return from(this._loadAndQuery(q))
+                .pipe(
+                    map(res => {
+                        var data = this._resToGeoJSON(res);
+                        return {data: data, query: q};
+                    })
+                );
+    }
+
+    public getElements2D(): Observable<any> {
+        const q = `
+        PREFIX bot:     <https://w3id.org/bot#>
+        PREFIX opm:     <https://w3id.org/opm#>
+        PREFIX schema:  <http://schema.org/>
+        PREFIX props:   <https://w3id.org/props#>
+        PREFIX geo:     <http://www.opengis.net/ont/geosparql#>
+        PREFIX inst:    <https://w3id.org/ibp/bot4osh/>
+        SELECT DISTINCT ?uri ?name ?geometry2d
+        WHERE {
+            ?x a bot:Space ;
+                bot:adjacentElement ?uri .
+            ?uri props:identityDataName/opm:hasPropertyState ?ns ;
+                props:hasSimple2DBoundary ?geometry2d .
+            ?ns a opm:CurrentPropertyState ;
+                schema:value ?name .
+        }`;
+
+        return from(this._loadAndQuery(q))
+                .pipe(
+                    map(res => {
+                        var data = this._resToGeoJSON(res);
+                        return {data: data, query: q};
+                    })
+                );
+    }
+
+    private _resToGeoJSON(res){
+        var geoJSON = {type: "FeatureCollection", features: []};
+
+        _.each(res, d => {
+            var uri: string = d.uri.value;
+            var name: string = d.name.value;
+            var geometry2d: any = parse(d.geometry2d.value);
+            geometry2d.coordinates = [geometry2d.coordinates];
+
+            // var properties = {name: name, uri: uri, color: '#eee'};
+            var properties = {name: name, uri: uri, color: '#eee'};
+            var obj = {type: "Feature", id: uri, geometry: geometry2d, properties: properties};
+            geoJSON.features.push(obj);
+        });
+
+        return geoJSON;
     }
 
     private async _loadAndQuery(query): Promise<any> {

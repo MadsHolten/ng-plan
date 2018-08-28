@@ -8,7 +8,8 @@
   "whitelistedNonPeerDependencies": [
     "three",
     "three-obj-loader",
-    "@avatsaev/three-orbitcontrols-ts",
-    "d3-scale-chromatic"
+    "@calvinscofield/three-objloader",
+    "d3-scale-chromatic",
+    "@avatsaev/three-orbitcontrols-ts"
   ]
 }

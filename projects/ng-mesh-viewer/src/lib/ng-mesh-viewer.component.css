@@ -7,7 +7,6 @@ canvas {
   z-index: 100;
   float: right;
 }
-
 .clickable {
   cursor: pointer;
 }

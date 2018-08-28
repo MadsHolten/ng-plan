@@ -1,5 +1,5 @@
 @prefix bot:	<https://w3id.org/bot#> .
-@prefix inst:	<https://forge-sparql.herokuapp.com/projects/P000001/> .
+@prefix inst:	<https://niras.dk/projects/0001/> .
 
 # WALLS
 inst:wall_1xS3BCk291UvhgP2dvNtzh bot:hasSimple3DModel "v 417 -417 3100
@@ -3211,46 +3211,6 @@ f 10//5 2//5 1//5
 f 5//6 9//6 8//6
 f 8//6 6//6 5//6
 " .
-
-# WINDOWS & DOORS
-inst:window_1xS3BCk291UvhgP2dvNrrP bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNrv5 bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNrY1 bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNrZJ bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNrdW bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNrfE bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNoJ3 bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNoO%24 bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNo1Q bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNo3N bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNoCx bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNom4 bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNopD bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNos1 bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNowu bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNoxK bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNozF bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNo%24h bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNmlJ bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNnH%24 bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNnLa bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNnNr bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvN%24je bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvN%24lY bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNwHx bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNwMI bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNwQb bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNwSd bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNwTD bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNw00 bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNw49 bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNw5g bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNwAF bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNwDm bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNxVS bot:hasSimple3DModel "" .
-inst:window_1xS3BCk291UvhgP2dvNx5J bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNd%24j bot:hasSimple3DModel "" .
-inst:door_1xS3BCk291UvhgP2dvNdad bot:hasSimple3DModel "" .
 
 ### SPACES ###
 inst:room_1xS3BCk291UvhgP2dvNvkw bot:hasSimple3DModel "v 6088 -12600 2600

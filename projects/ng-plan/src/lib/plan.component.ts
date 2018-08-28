@@ -128,19 +128,23 @@ export class PlanComponent implements AfterViewInit {
         var xMax;
         var yMax;
         
-        this.rooms = this.data.features.map(room => {
+        this.rooms = this.data.features.map(feature => {
             var polygons = [];
             var roomPath = '';
             var centroid;
-            if(room.geometry && room.geometry.type == "Polygon"){
+            if(feature.geometry && feature.geometry.type == "Polygon"){
                 
                 var roomPolygons = [];  // Allow multi polygons if doughnut room
-                room.geometry.coordinates.forEach(polygon => {
+                feature.geometry.coordinates.forEach(polygon => {
 
                     var points = '';
                     var path = '';
                     // Reflect y coordinates to fit browser coordinate system and extract to polygon
                     polygon.map((coordinate,index) => {
+
+                        coordinate[0] = Number(coordinate[0]);
+                        coordinate[1] = Number(coordinate[1]);
+
                         var x = coordinate[0];
                         var y = -coordinate[1]; // reflect since SVG uses reflected coordinate system
 
@@ -170,10 +174,10 @@ export class PlanComponent implements AfterViewInit {
                 });
                 polygons.push(roomPolygons);
             }
-            var name = room.properties.name;
-            var uri = room.properties.uri;
-            var color = room.properties.color ? room.properties.color : this.defaultColor;
-            var description = room.properties.description ? room.properties.description : '';
+            var name = feature.properties.name;
+            var uri = feature.properties.uri;
+            var color = feature.properties.color ? feature.properties.color : this.defaultColor;
+            var description = feature.properties.description ? feature.properties.description : '';
             
             // Store bounding box
             this.boundingBox = [xMin, yMin, xMax, yMax];

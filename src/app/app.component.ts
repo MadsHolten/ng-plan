@@ -31,9 +31,17 @@ export class AppComponent implements OnInit {
     this.selectedButton = name;
 
     if(name == "ng-plan"){
-      this.http.get('./assets/test-plan.json').subscribe(res => {
-        this.data = res;
-      })
+
+      this._s.getRooms2D().subscribe(res => {
+        this.query = res.query;
+        this.data = res.data;
+      }, err => console.log(err));
+
+      // COMMENT OUT TO GET ELEMENTS IN 2D
+      // this._s.getElements2D().subscribe(res => {
+      //   this.query = res.query;
+      //   this.data = res.data;
+      // }, err => console.log(err));
     }
 
     if(name == "ng-mesh-viewer"){
@@ -42,6 +50,8 @@ export class AppComponent implements OnInit {
         this.data = res.data;
         this.query = res.query;
       }, err => console.log(err));
+
+      // this._s.getElements3D().subscribe(res => this.data = res, err => console.log(err));
 
     }
 

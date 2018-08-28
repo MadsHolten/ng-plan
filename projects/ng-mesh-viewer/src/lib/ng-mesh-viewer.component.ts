@@ -1,7 +1,6 @@
-import { Component, OnChanges, AfterViewInit, SimpleChanges, Input, ViewChild, ElementRef, HostListener, Output, EventEmitter } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges, Input, ViewChild, ElementRef, HostListener, Output, EventEmitter } from '@angular/core';
 import * as THREE from 'three';
-import OBJLoader from 'three-obj-loader';
-OBJLoader(THREE);
+import OBJLoader from '@calvinscofield/three-objloader'
 import { OrbitControls } from '@avatsaev/three-orbitcontrols-ts';
 import * as d3 from 'd3-scale-chromatic';
 
@@ -16,12 +15,13 @@ import { OBJGeometry } from './ng-mesh-viewer.service';
   providers: [ NgMeshViewerService ]
 })
 
-export class NgMeshViewerComponent implements OnChanges, AfterViewInit {
+export class NgMeshViewerComponent implements OnInit, OnChanges {
 
   @Output() clickedRoom = new EventEmitter();             // Clicked room
   @Output() clickedCanvas = new EventEmitter();
 
-  public spaces;
+  public zones;
+  public elements;
   @Input() public data;           //JSON + obj
   @Input() public showCentroids: boolean = true;
   @Input() public showBoundingBox: boolean = true;
@@ -40,6 +40,8 @@ export class NgMeshViewerComponent implements OnChanges, AfterViewInit {
   public highlightMaterial = new THREE.MeshBasicMaterial( { color: 0x7c0a02, opacity: 1 } );
   public hoverMaterial = new THREE.MeshBasicMaterial( { color: 0x000000, opacity: 0.2 } );
 
+  public spaceObjects = [];
+
   // SELECTION
   public selected;                // Stores the selected object
   public previousMaterial;        // Stores the color of the object which was previously selected/hovered
@@ -50,34 +52,45 @@ export class NgMeshViewerComponent implements OnChanges, AfterViewInit {
   @ViewChild('canvas')
   private canvasRef: ElementRef;
 
-  constructor( private _s: NgMeshViewerService ) {
+  constructor( 
+      private _s: NgMeshViewerService
+  ) {
     this.render = this.render.bind(this);
+  }
+
+  ngOnInit(){
+    this.createScene();
+    this.createRenderer();
+    this.createCamera();
+    this.createControls();
+    this.render();
   }
 
   ngOnChanges(changes: SimpleChanges) {
 
     if(Array.isArray(changes.data.currentValue)){
 
-      this.createScene();
+        this.clearGeometry();
 
       // Perform geometry preprocessing
       // Scales and offsets geometry to fit ([0,0,0], [1,1,1]) scene
+      
       var processed = this._s.processOBJ(this.data).then(res => {
-        this.spaces = res.zones;
-        console.log(this.spaces);
-        this.appendMeshes(this.spaces);
+        this.zones = res.zones;
+        this.elements = res.elements;
+        // console.log(this.spaces[0].geometry);
+        this.appendMeshes(this.zones, "zone");
+        this.appendMeshes(this.elements, "element");
       });
       
-      this.createRenderer();
-      this.createCamera();
-      this.createControls();
-      this.render();
+      
     }
 
   }
 
-  ngAfterViewInit() {
-    
+  public clearGeometry(){
+
+    this.scene.children = this.scene.children.filter(x => x.type != "Group");
   }
 
   public render() {
@@ -110,64 +123,105 @@ export class NgMeshViewerComponent implements OnChanges, AfterViewInit {
     return this.renderer;
   }
 
-  private appendMeshes(spaces): void {
-
-    // Add OBJ graphics
-    var objLoader = new THREE.OBJLoader();
-    var colorScheme = d3.schemeCategory10;
+  private appendMeshes(geometry, type): void {
 
     // Convert to array if only single space received
-    if(!Array.isArray(spaces)) spaces = [spaces];
+    if(!Array.isArray(geometry)) geometry = [geometry];
 
-    for(var space of spaces){
+    var promises = [];
+    for(var geo of geometry){
 
-      var myObj = objLoader.parse(space.geometry);
-      var randInt = Math.floor(Math.random() * 10);
-      var color = new THREE.Color(colorScheme[randInt]);
+        if(type == "zone"){
+            var opacity = geo.opacity ? geo.opacity : 0.5;
+            if(opacity<1) var transparent = true;
+            var colorScheme = d3.schemeCategory10;
+            var randInt = Math.floor(Math.random() * 10);
+            var color = geo.color ? geo.color : colorScheme[randInt];
+            color = new THREE.Color(color);
 
-      // Define material
-      var material = new THREE.MeshBasicMaterial( { color: color, side: THREE.DoubleSide, opacity: 0.5, transparent: true, depthWrite: false } );
-
-      myObj.name = space.uri;
-
-      var invalidPos;
-      myObj.traverse(child => {
-        if ( child instanceof THREE.Mesh ) {
-          child.name = space.uri;
-          child.material = material;
-
-          // Get position attribute
-          var x: any = child.geometry.clone();
-          invalidPos = x.attributes.position.array.includes(NaN);
+            // Define material
+            var material = new THREE.MeshBasicMaterial( { color: color, side: THREE.DoubleSide, opacity: opacity, transparent: transparent, depthWrite: false } );
+        }else if(type == "element"){
+          material = null;
         }
-      });
 
-      // Add if not position includes NaN value(s)
-      if(!invalidPos){
-        this.scene.add(myObj);
-      
-        if(this.showCentroids){
-          // Get centroid of space
-          var bbox = new THREE.Box3().setFromObject(myObj)
-
-          var ct = new THREE.Vector3();
-          bbox.getCenter(ct);
-
-          // Add centroid
-          var geo = new THREE.Geometry();
-          geo.vertices.push(ct);
-          var color = new THREE.Color( "#000000" );
-          var mat = new THREE.PointsMaterial( { size: 2, sizeAttenuation: false, color: color } );
-          var centroid = new THREE.Points( geo, mat );
-          this.scene.add(centroid);
-        }
-      }else{
-        console.log("Space " + space.uri + " has invalid position attributes.")
-      }
+        var promise = this.loadOBJ(geo.geometry, geo.uri, material);
+        promises.push(promise);
     }
+
+    promises.forEach(p => {
+        p.then(res => {
+            // Add object to scene
+            this.scene.add(res.object);
+
+            // Save to spaces if it is of type space
+            if(type == "zone"){
+              this.spaceObjects.push(res.object);
+            }
+
+            // Add edges to scene
+            // this.scene.add(res.edges);
+
+            this.render();
+        }).catch(err => console.log(err));
+    })
 
     return;
     
+  }
+
+  private loadOBJ(objString, uri, material): Promise<any>{
+
+    var objLoader = new OBJLoader();
+
+    return new Promise (
+        (resolve, reject) => {
+
+            try{
+                var myObj = objLoader.parse(objString);
+                var edges;
+
+                myObj.name = uri;
+                myObj.traverse(child => {
+                    if(child.type == "Mesh"){
+                        child.name = uri;
+                        if(material) child.material = material;
+
+                        // // Get edges
+                        // edges = new THREE.EdgesHelper(child, 0x333333);
+                        // edges.material.linewidth = 2
+                    }
+                });
+
+                // myObj.add(edges);
+                // console.log(myObj);
+                
+                // var line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { color: 0xffffff } ) );
+
+                // if(this.showCentroids){
+                //     // Get centroid of space
+                //     var bbox = new THREE.Box3().setFromObject(myObj)
+
+                //     var ct = new THREE.Vector3();
+                //     bbox.getCenter(ct);
+
+                //     // Add centroid
+                //     var geo = new THREE.Geometry();
+                //     geo.vertices.push(ct);
+                //     var color = new THREE.Color( "#000000" );
+                //     var mat = new THREE.PointsMaterial( { size: 2, sizeAttenuation: false, color: color } );
+                //     var centroid = new THREE.Points( geo, mat );
+                //     this.scene.add(centroid);
+                // }
+
+                resolve({object: myObj, edges: edges});
+
+            }catch(err){
+                reject(err);
+            }
+
+        }
+    );
   }
 
   private createCamera(): THREE.Camera {

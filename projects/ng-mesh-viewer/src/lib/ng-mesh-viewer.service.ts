@@ -34,9 +34,11 @@ export class NgMeshViewerService {
       /**
        * SCALE AND OFFSET ORIGINAL
        */
-      var newData: string[] = data.map(el => {
+      var zones = [];
+      var elements = [];
+      data.map(obj => {
 
-          var objLines = el.geometry.split('\n');
+          var objLines = obj.geometry.split('\n');
 
           // Loop over lines in OBJ file
           var objLinesNew = objLines.map(l => {
@@ -60,9 +62,15 @@ export class NgMeshViewerService {
           });
 
           var geometryNew = objLinesNew.join('\n');
-          el.geometry = geometryNew;
+          obj.geometry = geometryNew;
 
-          return el;
+          if(obj.type == "Zone"){
+            zones.push(obj);
+          }else if(obj.type == "Element"){
+            elements.push(obj);
+          }
+
+          return;
 
       });
 
@@ -72,7 +80,7 @@ export class NgMeshViewerService {
           offset: offset
       }
 
-      return {zones: newData, geometryPreprocessing: geometryPreprocessing};
+      return {zones: zones, elements: elements, geometryPreprocessing: geometryPreprocessing};
 
   }
 

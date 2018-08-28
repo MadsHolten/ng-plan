@@ -1,0 +1,45 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+        "type": "Feature",
+        "id": "https://w3id.org/ibp/bot4osh/room_05b047f8-dd03-4cd9-a50c-d5d18c6f7ab7-0004e04f",
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+            [
+                [
+                -7551,
+                5556
+                ],
+                [
+                -2781,
+                5556
+                ],
+                [
+                -2781,
+                2506
+                ],
+                [
+                -4161,
+                1656
+                ],
+                [
+                -7551,
+                1656
+                ],
+                [
+                -7551,
+                5556
+                ]
+            ]
+            ]
+        },
+        "properties": {
+            "name": "Raum 1 1",
+            "uri": "https://w3id.org/ibp/bot4osh/room_05b047f8-dd03-4cd9-a50c-d5d18c6f7ab7-0004e04f",
+            "color": "#eee"
+        }
+        }
+    ]
+}
